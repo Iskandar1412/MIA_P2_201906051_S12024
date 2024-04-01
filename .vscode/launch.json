@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "type": "go",
+            "name": "debug global-command.go",
+            "request": "launch",
+            "mode": "auto",
+            "args": [],
+            "program": "/home/iskandar/Escritorio/Proyectos/Git/MIA_1S2024_201906051/Proyectos/MIA_P1_V3/comandos/comandos/global-command.go"
+        },
+        {
+            "type": "go",
+            "name": "debug main.go",
+            "request": "launch",
+            "mode": "auto",
+            "args": [],
+            "program": "/home/iskandar/Escritorio/Proyectos/Git/MIA_1S2024_201906051/Proyectos/MIA_P1_V3/main.go"
+        },
+        {
+            "type": "go",
+            "name": "debug mbr.go",
+            "request": "launch",
+            "mode": "auto",
+            "args": [],
+            "program": "/home/iskandar/Escritorio/Proyectos/Git/MIA_1S2024_201906051/Proyectos/MIA_P1_V3/comandos/report/mbr.go"
+        },
+        {
+            "type": "go",
+            "name": "debug mkfile.go",
+            "request": "launch",
+            "mode": "auto",
+            "args": [],
+            "program": "/home/iskandar/Escritorio/Proyectos/Git/MIA_1S2024_201906051/Proyectos/MIA_P1_V3/comandos/filesystem/mkfile.go"
+        }
+    ]
+}

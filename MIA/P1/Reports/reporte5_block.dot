@@ -1,0 +1,2188 @@
+digraph G {
+	node[shape=none];
+	n2512373[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>users.txt</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109537</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>bin</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109629</td>
+		</tr>
+	</table>>];
+
+	n2512693[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>boot</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109721</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>cdrom</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109813</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>dev</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109905</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>etc</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109997</td>
+		</tr>
+	</table>>];
+
+	n2513013[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>home</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110089</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>lib</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110181</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>lib64</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110273</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>media</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110365</td>
+		</tr>
+	</table>>];
+
+	n2513333[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>mnt</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110457</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>opt</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110549</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>proc</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110641</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>run</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110733</td>
+		</tr>
+	</table>>];
+
+	n2513653[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>sbin</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110825</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>snap</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110917</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>srv</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111009</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>sys</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111101</td>
+		</tr>
+	</table>>];
+
+	n2513973[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>tmp</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111193</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>var</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111285</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2512437[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>1,G,root<br/>1,U,root,root,123<br/>2,G,usuarios<br/>3,G,adm<br/>5,G,news<br/>6,G,sys</td>
+		</tr>
+	</table>>];
+
+	n2512501[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td><br/>2,U,root,usuario1,password<br/>3,U,usuarios,user1,abc<br/></td>
+		</tr>
+	</table>>];
+
+	n2512565[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109629</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2512629[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109721</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2512757[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109813</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2512821[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109905</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2512885[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109997</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2512949[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110089</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>archivos</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111377</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2513077[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110181</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2513141[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110273</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2513205[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110365</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2513269[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110457</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2513397[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110549</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2513461[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110641</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2513525[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110733</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2513589[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110825</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2513717[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110917</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2513781[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111009</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2513845[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111101</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2513909[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111193</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2514037[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111285</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>109445</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2514101[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111377</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>110089</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>archivos 19</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111469</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>users</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111561</td>
+		</tr>
+	</table>>];
+
+	n2514549[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>carpeta1</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111929</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2514165[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111469</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111377</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2514229[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111561</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111377</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>docs</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111653</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2514293[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111653</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111561</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2516085[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>Tarea2.txt</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112941</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>Tarea3.txt</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>113033</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2514485[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111929</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111377</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>carpeta1</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112021</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>carpeta2</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112113</td>
+		</tr>
+	</table>>];
+
+	n2514613[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112021</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111929</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2514677[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112113</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>111929</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>carpeta2</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112205</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>carpeta3</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112297</td>
+		</tr>
+	</table>>];
+
+	n2514741[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112205</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112113</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2514805[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112297</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112113</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>carpeta3</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112389</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>carpeta4</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112481</td>
+		</tr>
+	</table>>];
+
+	n2514869[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112389</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112297</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2514933[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112481</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112297</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>carpeta4</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112573</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>carpeta5</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112665</td>
+		</tr>
+	</table>>];
+
+	n2514997[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112573</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112481</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2515061[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112665</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112481</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>carpeta5</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112757</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2515125[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Carpeta</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  0</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>.</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112757</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  1</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td>..</td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>112665</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  2</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="#b6f8d3">b_content  3</td>
+		</tr>
+		<tr>
+			<td>b_name</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>b_inodo</td>
+			<td>-1</td>
+		</tr>
+	</table>>];
+
+	n2515317[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>0123456789012345678901234567890123456789012345678901234567890123</td>
+		</tr>
+	</table>>];
+
+	n2515381[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>4567890123456789012345678901234567890123456789012345678901234567</td>
+		</tr>
+	</table>>];
+
+	n2515445[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>8901234567890123456789012345678901234567890123456789012345678901</td>
+		</tr>
+	</table>>];
+
+	n2515509[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>2345678901234567890123456789012345678901234567890123456789012345</td>
+		</tr>
+	</table>>];
+
+	n2515573[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>6789012345678901234567890123456789012345678901234567890123456789</td>
+		</tr>
+	</table>>];
+
+	n2515637[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>0123456789012345678901234567890123456789012345678901234567890123</td>
+		</tr>
+	</table>>];
+
+	n2515701[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>4567890123456789012345678901234567890123456789012345678901234567</td>
+		</tr>
+	</table>>];
+
+	n2515765[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>8901234567890123456789012345678901234567890123456789012345678901</td>
+		</tr>
+	</table>>];
+
+	n2515829[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>2345678901234567890123456789012345678901234567890123456789012345</td>
+		</tr>
+	</table>>];
+
+	n2515893[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>6789012345678901234567890123456789012345678901234567890123456789</td>
+		</tr>
+	</table>>];
+
+	n2515957[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>0123456789012345678901234567890123456789012345678901234567890123</td>
+		</tr>
+	</table>>];
+
+	n2516021[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>4567890123456789012345678901234567890123456789012345678901234567</td>
+		</tr>
+	</table>>];
+
+	n2516149[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6" width="700">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>0123456789</td>
+		</tr>
+	</table>>];
+
+}

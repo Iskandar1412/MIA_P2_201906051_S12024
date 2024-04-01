@@ -1,0 +1,187 @@
+# execute -path=/home/iskandar/Escritorio/Proyectos/Git/MIA_1S2024_201906051/Proyectos/MIA_P1_201906051/Pruebas/prueba.adsj
+# execute -path=Pruebas/prueba.adsj
+
+
+
+
+
+#Disco 1
+MKdisK -Size=15 -unit=M -fit=bF
+fdisk -driveletter=A -size=12 -name=asdf -type=L
+fdisk -name=Parte2 -driveletter=A -size=20 -unit=M -type=E
+fdisk -name=Parte2 -driveletter=A -size=4 -unit=M -type=E
+Fdisk -name="Part1" -driveletter=A -size=2 -unit=M -type=P  #-delete=FULL
+Fdisk -name="Part3" -driveletter=A -size=900 -type=P 
+Fdisk -name="Part5" -driveletter=A -size=800 -type=P 
+fdisk -driveletter=A -size=12 -name=asdf -type=L
+fdisk -driveletter=A -size=12 -name=asdf -type=L
+fdisk -driveletter=A -size=450 -unit=k -name=donce -type=L
+fdisk -driveletter=A -size=1 -unit=m -name=fuka -type=L
+fdisk -driveletter=A -size=205 -unit=k -name=kam -type=L
+pause
+
+#Disco 2
+#MKdisK -Size=12 -unit=M -fit=fF
+#fdisk -name=Parte6 -driveletter=B -size=4 -unit=M -type=E
+#Fdisk -name="Part55" -driveletter=B -size=2 -type=P  #-delete=FULL
+#Fdisk -name="Part9" -driveletter=B -size=400 -type=P 
+#Fdisk -name="Part7" -driveletter=B -size=241 -type=P 
+#fdisk -driveletter=B -size=12 -name=conociendo -type=L
+#fdisk -driveletter=B -size=12 -name=asdf -type=L
+#fdisk -driveletter=B -size=450 -unit=k -name=ind -type=L
+
+
+#fdisk -driveletter=B -delete=full -name=Part9
+#fdisk -driveletter=B -delete=full -name=asdf
+#fdisk -driveletter=B -add=-1 -size=10 -unit=k -name=Part55
+#fdisk -driveletter=B -add=500 -size=10 -unit=k -name=Part55
+#fdisk -driveletter=B -add=500 -size=10 -unit=m -name=Part55
+#fdisk -driveletter=B -add=-450 -size=10 -unit=m -name=Part55
+
+#Montar particiones
+#mount -driveletter=B -name=Part55 #B151
+#mount -driveletter=B -name=Part9 #B251
+#pause
+ 
+mount -driveletter=A -name=Part1 #A151
+mount -driveletter=A -name=Part3 #A251
+mount -driveletter=A -name=Part5 #A351
+mount -driveletter=A -name=donce #A451
+#mount -driveletter=A -name=asdf #A551
+#mount -driveletter=A -name=kam #A651
+mount -name=Parte2 -driveletter=A #ERR
+
+
+
+
+#Desmontar particiones
+#unmount -id=A451
+#unmount -id=A151
+#unmount -id=A351
+#unmount -id=A251
+
+#Formateo de disco MKFS
+#pause
+pause
+mkfs -id=A151 -fs=3fs
+mkfs -id=A351 -type=full
+mkfs -id=A251 -fs=3fs -type=full
+mkfs -id=A451 -fs=3fs
+
+pause
+login -user=root -pass=123 -id=A351
+#cat -file1=/users.txt
+rep -id=A351 -path=MIA/P1/Reports/A351mbr_prueba1.jpg -name=mbr
+rep -id=A351 -path=MIA/P1/Reports/A351disk_prueba1.jpg -name=disk
+rep -id=A351 -path=MIA/P1/Reports/A351sb_prueba1.jpg -name=sb
+rep -id=A351 -path=MIA/P1/Reports/A351inodo_prueba1.jpg -name=inode
+rep -id=A351 -path=MIA/P1/Reports/A351bm_inode_prueba1.txt -name=bm_inode
+rep -id=A351 -path=MIA/P1/Reports/A351bm_block_prueba1.txt -name=bm_block
+rep -id=A351 -path=MIA/P1/Reports/A351file_prueba1.txt -ruta=/users.txt -name=file
+rep -id=A351 -path=MIA/P1/Reports/A351ls_prueba1.jpg -ruta=/ -name=ls
+rep -id=A351 -path=MIA/P1/Reports/A351journal_prueba1.jpg -name=journaling
+rep -id=A251 -path=MIA/P1/Reports/A251journal_prueba1.jpg -name=journaling
+rep -id=A251 -path=MIA/P1/Reports/A251block_prueba1.jpg -name=block
+rep -id=A251 -path=MIA/P1/Reports/A251tree_prueba1.jpg -name=tree
+logout
+
+
+login -user=root -pass=123 -id=A251
+mkgrp -name=grupo1
+mkgrp -name=grupo2
+mkgrp -name=grupo3
+mkgrp -name=grupo4
+mkgrp -name=grupo5
+mkgrp -name=grupo6
+mkgrp -name=grupoB
+#cat -file1=/users.txt
+mkgrp -name=grupo7
+mkgrp -name=grupo8
+mkgrp -name=grupo9
+mkgrp -name=grupo10
+rep -id=A251 -path=MIA/P1/Reports/A251sb_prueba2.jpg -name=sb
+rep -id=A251 -path=MIA/P1/Reports/A251tree_prueba2.jpg -name=tree
+rmgrp -name=grupo6
+#cat -file1=/users.txt
+#pause
+mkusr -user=super -pass=123 -grp=grupoB
+mkusr -user=iskandar -pass=123 -grp=grupoB
+mkusr -user=lalo -pass=123 -grp=grupoB
+mkusr -user=sulph -pass=123 -grp=grupo8
+#cat -file1=/users.txt
+mkusr -user=aika -pass=123 -grp=grupo4
+mkusr -user=mika -pass=123 -grp=grupo4
+rmusr -user=aika
+rmusr -user=sulph
+rmusr -user=lalo
+#-------------
+cat -file1=/users.txt
+chgrp -user=super -grp=grupo1
+#cat -file1=/users.txt
+mkdir -path=/bin
+mkdir -path=/boot
+mkdir -path=/cdrom
+mkdir -path=/dev
+mkdir -path=/etc
+mkdir -path=/home
+mkdir -path=/lib
+mkdir -path=/lib64
+mkdir -path=/media
+mkdir -path=/media/cast
+mkfile -path=/bin/archivo.txt -size=15
+mkfile -path=/home/archivo2.txt -size=16
+mkdir -path=/mnt
+cat -file1=/bin/archivo.txt
+mkdir -path=/opt
+rep -id=A251 -path=MIA/P1/Reports/tree_prueba3.jpg -name=tree
+rep -id=A251 -path=MIA/P1/Reports/block_prueba2.jpg -name=block
+rep -id=A251 -path=MIA/P1/Reports/A251file_prueba1.txt -ruta=/users.txt -name=file
+mkfile -path=/bin/archivo3.txt -size=16
+chmod -path=/opt -ugo=777
+chown -path=/bin -user=iskandar
+#remove -path=/dev
+#remove -path=/home/archivo2.txt
+rename -path=/bin/archivo3.txt -name=cosa1.txt
+move -path=/home/archivo2.txt -destino=/mnt
+mkdir -path=/opt1
+chmod -path=/loquesea -ugo=333 -r
+chown -path=/loquesea -user=aika -r
+#find -path=/loquesea -name="?.*"
+#move -path=/loquesea -destino=/loquesea2
+#copy -path=/loquesea -destino=/loquesea2
+#remove -path=/loquesea
+cat -file=/users.txt
+pause
+#mkfile -size=15 -path=/asdf -r
+rep -id=A251 -path=MIA/P1/Reports/tree_prueba4.jpg -name=tree
+rep -id=A251 -path=MIA/P1/Reports/A251sb_prueba3.jpg -name=sb
+
+remove -path=/home/archivo2.txt
+
+rep -id=A251 -path=MIA/P1/Reports/A251journal_prueba4.jpg -name=journaling
+#-------------
+
+
+#rename -path=/loquesea -name="?.*"
+edit -path=/loquesea -cont=/loquesea2
+
+
+rmusr -user=super
+chgrp -user=super -grp=grupo1
+rmusr -user=sulph
+chgrp -user=super -grp=grupo10
+
+#cat -file1=/users.txt
+#cat -file1=/users.txt
+#mkusr -user=kim -pass=123 -grp=grupoB
+#cat -file1=/users.txt
+
+mkdir -path=/home
+mkdir -path=/Nano
+mkdir -path=/home/iskandar -r
+mkfile -size=30 -path=/Nano/eme.txt
+mkfile -size=5 -path=/home/iskandar/prueba.txt
+cat -file1=/Nano/eme.txt -file2=/home/iskandar/prueba.txt
+
+logout
+
