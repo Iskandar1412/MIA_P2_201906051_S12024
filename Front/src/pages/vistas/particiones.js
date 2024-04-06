@@ -6,11 +6,14 @@ function Partitions(props) {
     const handleClickButton = (event) => {
         const valorBoton = event.target.getAttribute('data-value');
         console.log("Valor del botón:", valorBoton);
+
+        // A este se le hace verificación de informacion
+        props.onSeleccionar('login')
     }
 
     return (
         <>  
-            <button className='button-ant' onClick={() => props.onSeleccionar('discos')}></button>
+            <button className='button-ant' onClick={() => props.onSeleccionar('discos')} />
             <div className="particiones">
                 <button 
                     className="buttonPartition"

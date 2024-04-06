@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Discos from "./vistas/discos";
 import Partitions from "./vistas/particiones";
+import Login from "./vistas/login";
+import Dashboard from "./vistas/dashboard";
 
 
 function Pantalla2() {
@@ -12,13 +14,13 @@ function Pantalla2() {
 
     let componenteMostrar;
     if (componenteActual === 'discos') {
-        componenteMostrar = <Discos onSeleccionar={cambiarComponente}/>
+        componenteMostrar = <Discos onSeleccionar={cambiarComponente} />
     } else if (componenteActual === 'particiones') {
-        componenteMostrar = <Partitions  onSeleccionar={cambiarComponente}/>
+        componenteMostrar = <Partitions  onSeleccionar={cambiarComponente} />
     } else if (componenteActual === 'login') {
-        //login
-    } else if (componenteMostrar === 'dashboard') {
-        //dashboard
+        componenteMostrar = <Login  onSeleccionar={cambiarComponente} />
+    } else if (componenteActual === 'dashboard') {
+        componenteMostrar = <Dashboard onSeleccionar={cambiarComponente} />
     }
 
     return (

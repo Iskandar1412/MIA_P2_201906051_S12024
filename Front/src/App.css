@@ -181,7 +181,7 @@ body {
 .label-type:before {
   font-family: fontawesome;
   font-weight: normal;
-  margin-right: 10px;
+  margin-right: 1vh;
   color: rgb(65, 51, 51);
 }
 
@@ -392,4 +392,278 @@ input[type="radio"]:checked + .label-type::before {
     font-family: fontawesome;
     font-weight: normal;
     content: '\f060';
-  }
+}
+
+.login {
+    align-content: center;
+    justify-content:center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 2vh 3vw;
+    color: white;
+    
+}
+
+.div-form {
+  width: 100%;
+  height: 50%;
+  margin-top: 10vh;
+}
+
+.login-form {
+  width: 30vw;
+  height: 70vh;
+  background: var(--bs-gray-500);
+  border-radius: 10px;
+}
+
+.button-ant2 {
+    border-radius: 100px;
+    background: transparent;
+    margin-top: 1vh;
+    margin-left: 0.5vw;
+    font-size: 2vw;
+    border: transparent;
+    color: var(--bs-danger);
+    transition: 0.5s;
+    opacity: 1;
+    z-index: 100;
+}
+
+.button-ant2:hover {
+    color: var(--bs-body-bg);
+    transition: 0.5s;
+}
+
+.button-ant2:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    content: '\f060';
+}
+
+.usuario-logo {
+  color: var(--bs-danger);
+  margin: 0;
+  padding: 0;
+  width: 15vh;
+  height: 15vh;
+  margin: auto;
+  transition: .5s;
+}
+
+.usuario-logo::before {
+  margin: 0 0.05vw;
+  padding: 0;
+  font-size: 16vh;
+  font-family: fontawesome;
+  font-weight: normal;
+  content: '\f113';
+}
+
+.usuario-logo:hover {
+  color: #0d6efd;
+  transition: .5s;
+}
+
+.form-users {
+  width: 100%;
+  margin-top: 6vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+  height: 50%;
+}
+
+.usuario-form {
+  padding: 0 1vw;
+  height: 4vh;
+  font-size: 2vh;
+  width: 60%;
+  background-color: var(--bs-dark);
+  color: var(--bs-body-bg);
+  border-color: transparent;
+  transition: .5s;
+}
+
+.password-form {
+  padding: 0 1vw;
+  height: 4vh;
+  font-size: 2vh;
+  margin-top: 4vh;
+  width: 60%;
+  background-color: var(--bs-dark);
+  color: var(--bs-body-bg);
+  border-color: transparent;
+  border: 0 solid transparent;
+  transition: .5s;
+}
+
+.usuario-form:focus,  
+.password-form:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px green;
+  transition: .5s;
+}
+
+.login-button {
+  margin-top: 5vh;
+  width: 50%;
+  height: 10%;
+  color: var(--bs-body-bg);
+  border: 2px transparent solid;
+  font-size: 2vh;
+  background: var(--bs-danger);
+  transition: .5s;
+}
+
+.login-button:hover {
+  background: var(--bs-body-bg);
+  color: var(--bs-danger);
+  transition: .5s;
+  border: 2px solid var(--bs-danger);
+}
+
+.dash {
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0vh 0vw;
+  color: white;
+}
+
+.navegadores-dash {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+}
+
+.button-ant-dash {
+  border-radius: 100px;
+  background: transparent;
+  margin-top: 0vh;
+  margin-left: 0.5vw;
+  font-size: 2vw;
+  border: transparent;
+  color: var(--bs-body-bg);
+  transition: 0.5s;
+}
+
+.button-ant-dash:hover {
+  color: var(--bs-danger);
+  transition: 0.5s;
+}
+
+.button-ant-dash:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  content: '\f011';
+}
+
+.button-sal-carpet {
+  border-radius: 100px;
+  background: transparent;
+  margin-top: 0vh;
+  margin-left: 0.5vw;
+  font-size: 2vw;
+  border: transparent;
+  color: var(--bs-teal);
+  transition: 0.5s;
+}
+
+.button-sal-carpet:hover {
+  color: var(--bs-body-bg);
+  transition: 0.5s;
+}
+
+.button-sal-carpet:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  content: '\f190';
+}
+
+.name_user{
+  font-size: 2vh;
+  height: 100%;
+  width: 6vw;
+  margin: 0;
+  align-content: center;
+}
+
+.div-path {
+  width: 80%;
+  justify-content: center;
+  font-size: 2vh;
+  overflow-x: auto;
+  height: 90%;
+  margin: 0.25% 2%;
+  border-radius: 20px;
+  padding: .5vh 1vh;
+  background: var(--bs-gray-600);
+}
+
+.content-dashboard {
+  align-content: inherit;
+  justify-content: inherit;
+  width: 100%;
+  height: 95%;
+  padding: 2vh 3vw;
+  color: white;
+  z-index: -50;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 2vh;
+  margin-left: 4vw;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Ajusta este valor según sea necesario */
+  width: 80vw;
+  height: 85vh;
+  background: var(--bs-body-bg);
+  color: var(--bs-3C4245);
+  border-radius: 20px;
+  padding: 0 2vw;
+  /* Otros estilos... */
+}
+
+.boton-exit {
+  width: 100%;
+  height: 5vh;
+  border-radius: 10px;
+}
+
+.button-x {
+  width: 4vh;
+  height: 4vh;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  right: .5vw;
+  top: .5vh;
+  font-size: 2vh;
+  color: var(--bs-dark);
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background: var(--bs-3688B0);
+  transition: .5s;
+}
+
+.button-x::before {
+  font-family: fontawesome;
+  font-weight: normal;
+  content: '\f066';
+}
+
+.button-x:hover {
+  background-color: var(--bs-dark);
+  transition: .5s;
+  color: var(--bs-3688B0);
+}
