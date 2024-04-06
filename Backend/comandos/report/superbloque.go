@@ -4,7 +4,6 @@ import (
 	"encoding/binary"
 	"fmt"
 	"os"
-	"os/exec"
 	"proyecto/comandos/utils"
 	"proyecto/estructuras/size"
 	"proyecto/estructuras/structures"
@@ -166,14 +165,14 @@ func Report_SUPERBLOCK(name string, path string, ruta string, id_disco string) {
 	//-----------
 	dot.Close()
 	// Generacion del reporte
-	imagePath := path + "/" + name
+	// imagePath := path + "/" + name
 
-	cmd := exec.Command("/usr/bin/dot", "-T"+nombre_sin_extension[1], rutaB, "-o", imagePath)
-	err = cmd.Run()
-	if err != nil {
-		color.Red("[REP]: Error al generar imagen")
-		return
-	}
+	// cmd := exec.Command("/usr/bin/dot", "-T"+nombre_sin_extension[1], rutaB, "-o", imagePath)
+	// err = cmd.Run()
+	// if err != nil {
+	// 	color.Red("[REP]: Error al generar imagen")
+	// 	return
+	// }
 
 	color.Green("[REP]: SuperBlock «" + name + "» generated Sucessfull")
 }

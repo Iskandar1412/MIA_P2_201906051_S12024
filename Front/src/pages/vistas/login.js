@@ -1,10 +1,29 @@
 import React, { useState } from 'react';
 import frame from '../../img/frame1.jpg'
 
-function Login(props) {
+function Login( props ) {
     const [password, setPassword] = useState("")
     const [user, setUser] = useState("");
     
+
+    const enviarDirectorios = () => {
+        //se usará un fetch para obtener los directorios y archivos
+        var dir = [
+            { nombre: "archivo.txt", tipo: "archivo", contenido: "Contenido del archivo 1" },
+            { nombre: "archivo2", tipo: "archivo", contenido: "Contenido del archivo 1" },
+                { nombre: "carpeta1", tipo: "carpeta", contenido: [
+                    { nombre: "archivo2", tipo: "archivo", contenido: "Contenido del archivo 2" },
+                    { nombre: "carpeta2", tipo: "carpeta", contenido: [
+                        { nombre: "archivo3", tipo: "archivo", contenido: "Contenido del archivo 3" }
+                    ]}
+                ]
+            }
+        ]
+        /*
+            */
+        props.cambiarDirectorios(dir)
+    }
+
     const handleLogin = (event) => {
         event.preventDefault();
         if (user === "" && password === "") {
@@ -20,8 +39,8 @@ function Login(props) {
         }
         
         //Verificar inicio seción
-
-        console.log(user, password)
+        //console.log(user, password)
+        enviarDirectorios()
         setUser("")
         setPassword("")
         localStorage.setItem('user', user)

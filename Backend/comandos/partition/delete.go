@@ -1,9 +1,7 @@
 package partition
 
 import (
-	"bufio"
 	"encoding/binary"
-	"fmt"
 	"os"
 	"proyecto/comandos/utils"
 	"proyecto/estructuras/size"
@@ -29,10 +27,10 @@ func DeleteP(path string, _name []byte, _unit byte, _type byte, _fit byte) {
 		color.Red("[Delete]: Error en la lectura del MBR")
 		return
 	}
-	fmt.Print("¿Esta seguro de eliminar la particion «" + utils.ToString(_name) + "» (y/n) «Enter to Ok»: -> ")
-	// input := "y"
-	reader := bufio.NewReader(os.Stdin)
-	input, _ := reader.ReadString('\n')
+	// fmt.Print("¿Esta seguro de eliminar la particion «" + utils.ToString(_name) + "» (y/n) «Enter to Ok»: -> ")
+	input := "y"
+	// reader := bufio.NewReader(os.Stdin)
+	// input, _ := reader.ReadString('\n')
 	input = strings.TrimSpace(input)
 	pos := int32(-1)
 	if input == "" || strings.ToUpper(input) == "Y" {

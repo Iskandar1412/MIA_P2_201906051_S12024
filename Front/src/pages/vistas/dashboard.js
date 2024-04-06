@@ -2,26 +2,26 @@ import { useEffect, useState } from "react";
 import carpeta from '../../img/Carpeta1.png'
 import archivo from '../../img/File.png'
 
-function Dashboard (props) {
+function Dashboard ( props ) {
     const [userDash, setUserDash] = useState("")
     const [path, setPath] = useState("/")
     const [historial, setHistorial] = useState([]);
     const [contenidoArchivo, setContenidoArchivo] = useState("");
-    const [data, setData] = useState([
-        { nombre: "archivo1", tipo: "archivo", contenido: "Contenido del archivo 1" },
-        { nombre: "archivo2", tipo: "archivo", contenido: "Contenido del archivo 1" },
-        { nombre: "carpeta1", tipo: "carpeta", contenido: [
-            { nombre: "archivo2", tipo: "archivo", contenido: "Contenido del archivo 2" },
-            { nombre: "carpeta2", tipo: "carpeta", contenido: [
-                { nombre: "archivo3", tipo: "archivo", contenido: "Contenido del archivo 3" }
-            ]}
-        ]}
-    ]);
+    const [data, setData] = useState([]);
+
+    
     
     useEffect(() => {
         const uss = localStorage.getItem('user')
         if (uss === "")  {
             props.onSeleccionar('particiones')
+        }
+        //console.log("dir", props.dir,  "carpeta", props.capetas)
+        setData(props.dir)
+        if ((props.capetas === undefined) || (props.capetas.length === 0) || (props.capetas.length < props.dir.length)) {
+            setData(props.dir)
+        } else {
+            setData(props.capetas)
         }
         setUserDash(uss)
     }, [props])
@@ -68,10 +68,10 @@ function Dashboard (props) {
                 <div className="div-path">{path}</div>
             </div>
             <div className="content-dashboard">
-                {data.map((item, index) => (
+                {data.map((item) => (
                     item.tipo === "archivo" ? (
                         <button 
-                            key={index}
+                            key={item.nombre}
                             className="buttonDisk"
                             onClick={() => handleMostrarContenido(item.contenido)}
                         >
@@ -83,7 +83,7 @@ function Dashboard (props) {
                         </button>
                     ) : (
                         <button 
-                            key={index}
+                            key={item.nombre}
                             className="buttonPartition"
                             onClick={() => handleClick(item.contenido, item.nombre)}
                         >
