@@ -14,7 +14,7 @@ function getCommand(comm, ...commands) {
 function Pantalla1({ info, carpetas, dots }) {
     const [command, setCommand] = useState('');
     const [commandsSaved, setCommandSaved] = useState([]);
-
+    const path = "http://localhost:8080"
     const HandleCommandChange = (event) => {
         setCommand(event.target.value);
     };
@@ -26,7 +26,28 @@ function Pantalla1({ info, carpetas, dots }) {
         }
     }
 
-    const handlePostCommand = () => {
+    const obtenerInformacion = async (objeto) => {
+        try {
+            const response = await fetch(path + "/command", {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(objeto)
+            })
+
+            if (response.ok) {
+                info(command)
+                console.log("ok")
+            }
+            
+        } catch (e) {
+            console.error(e)
+        }
+    }
+
+    const handlePostCommand =  () => {
+        let objeto = {
+            comando: ""
+        }
         if (command.trim() !== '') {
             //Hacer operacion para enviar
             let com = getCommand(command.toLowerCase(), "mkdisk", "fdisk", "rmdisk", "mount", "unmount", "mkfs");
@@ -35,17 +56,20 @@ function Pantalla1({ info, carpetas, dots }) {
             let com4 = getCommand(command.toLowerCase(), "login", "logout");
             if (["mkdisk", "fdisk", "rmdisk", "mount", "unmount", "mkfs"].includes(com)) {
                 //actualizar los discos
-                info(command)
+                objeto.comando = command
+                obtenerInformacion(objeto)
                 setCommandSaved([...commandsSaved, command]);
                 setCommand('');
             } else if (["mkfile", "cat", "remove", "edit", "rename", "mkdir", "copy", "move", "find", "chown", "chgrp", "chmod", "mkgrp", "rmgrp", "mkusr", "rmusr"].includes(com2)) {
                 //actualizar informacion
                 carpetas(command)
+                objeto.comando = command
                 setCommandSaved([...commandsSaved, command]);
                 setCommand('');
             } else if (["rep"].includes(com3)){
                 //actualizar reportes
                 dots(command)
+                objeto.comando = command
                 setCommandSaved([...commandsSaved, command]);
                 setCommand('');
             } else if (["login", "logout"].includes(com4)){
@@ -59,6 +83,7 @@ function Pantalla1({ info, carpetas, dots }) {
             alert("No hay ningun comando puesto")
             return
         }
+        
     };
 
     return (
