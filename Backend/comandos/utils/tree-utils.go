@@ -38,7 +38,7 @@ func TreeBlock(pos int32, _type int32, path string) string {
 
 		dot += "\tn" + strconv.Itoa(int(pos)) + `[label=<<table>` + "\n"
 		dot += "\t\t" + `<tr>` + "\n"
-		dot += "\t\t\t" + `<td colspan="2" bgcolor="#f34037">Bloque Carpeta</td>` + "\n"
+		dot += "\t\t\t" + `<td colspan="2" bgcolor="#f34037">Bloque Carpeta ` + fmt.Sprint(pos) + `</td>` + "\n"
 		dot += "\t\t" + `</tr>` + "\n"
 		//--/--/--/--/--/--/--/--/--/
 		//--/--/--/--/--/--/--/--/--/

@@ -26,21 +26,39 @@ function Pantalla1({ info, carpetas, dots }) {
         }
     }
 
-    const obtenerInformacion = async (objeto) => {
+    const ObtenerInformacionMBR = async () => {
+        try {
+            const res = await fetch(path + "/obtain-mbr", {
+                method: 'GET',
+                headers: { 'Content-Type': 'application/json' },
+            })
+
+            if (res.ok) {
+                const response = await res.json();
+                console.log("siuuuuuuuu", response)
+                info(command)
+            }
+        } catch (e) {
+            console.error(e)
+        }
+    }
+
+    const postInformacion = async (objeto) => {
         try {
             const response = await fetch(path + "/command", {
                 method: 'POST',
-                headers: {'Content-Type': 'application/json'},
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(objeto)
             })
 
             if (response.ok) {
-                info(command)
+                ObtenerInformacionMBR()
                 console.log("ok")
             }
             
         } catch (e) {
-            console.error(e)
+            console.error("Error")
+            info(command)
         }
     }
 
@@ -57,12 +75,17 @@ function Pantalla1({ info, carpetas, dots }) {
             if (["mkdisk", "fdisk", "rmdisk", "mount", "unmount", "mkfs"].includes(com)) {
                 //actualizar los discos
                 objeto.comando = command
-                obtenerInformacion(objeto)
+                postInformacion(objeto)
                 setCommandSaved([...commandsSaved, command]);
                 setCommand('');
-            } else if (["mkfile", "cat", "remove", "edit", "rename", "mkdir", "copy", "move", "find", "chown", "chgrp", "chmod", "mkgrp", "rmgrp", "mkusr", "rmusr"].includes(com2)) {
+            } else if (["mkfile", "remove", "edit", "rename", "mkdir", "copy", "move", "chown", "chgrp", "chmod", "mkgrp", "rmgrp", "mkusr", "rmusr"].includes(com2)) {
                 //actualizar informacion
                 carpetas(command)
+                objeto.comando = command
+                setCommandSaved([...commandsSaved, command]);
+                setCommand('');
+            } else if (["cat", "find"].includes(com2)) {
+                //no suceden acciones
                 objeto.comando = command
                 setCommandSaved([...commandsSaved, command]);
                 setCommand('');

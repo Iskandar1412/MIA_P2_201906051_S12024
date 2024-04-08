@@ -6,12 +6,7 @@ import (
 	"net/http"
 )
 
-type Caosa struct {
-	a string
-	b int32
-}
-
-func main() {
+func server() {
 	http.HandleFunc("/command", func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodOptions {
 			// Establecer encabezados CORS para las solicitudes OPTIONS
@@ -50,7 +45,7 @@ func main() {
 
 	http.HandleFunc("/obtain-mbr", func(w http.ResponseWriter, r *http.Request) {
 		//leerr mbr
-		mbr, emb := Retornar()
+		mbr, emb := Retorno_MBR()
 		if emb != nil {
 			fmt.Println("Error")
 			return
@@ -61,12 +56,4 @@ func main() {
 
 	fmt.Println("Backend server is on 8080")
 	http.ListenAndServe(":8080", nil)
-}
-
-func Retornar() (Caosa, error) {
-	var va Caosa
-	va.a = "asdf"
-	va.b = 33
-	//fmt.Println("leyendombr")
-	return va, nil
 }

@@ -50,21 +50,21 @@ func Values_LOGIN(instructions []string) (global.Usuario, bool) {
 	return user_temp, true
 }
 
-func LOGIN_EXECUTE(usuario string, password string, id_disco string) {
+func LOGIN_EXECUTE(usuario string, password string, id_disco string) bool {
 	if global.UsuarioLogeado.Logged_in {
 		color.Red("[LOGIN]: Ya hay una secion activa")
-		return
+		return false
 	}
 
 	particion_montada, epm := utils.Buscar_ID_Montada(id_disco)
 	if !epm {
-		return
+		return false
 	}
 
 	file, err := os.OpenFile(particion_montada.Path, os.O_RDWR, 0666)
 	if err != nil {
 		color.Red("[LOGIN]: Error al abrir archivo")
-		return
+		return false
 	}
 	defer file.Close()
 
@@ -75,17 +75,17 @@ func LOGIN_EXECUTE(usuario string, password string, id_disco string) {
 			if utils.ToString(mbr.Part_name[:]) == utils.ToString(particion_montada.Particion_P.Part_name[:]) {
 				if mbr.Part_status != 1 {
 					color.Red("[LOGIN]: Particion no formateada")
-					return
+					return false
 				}
 
 				//Obtener SuperBloque
 				if _, err := file.Seek(int64(particion_montada.Particion_P.Part_start), 0); err != nil {
 					color.Red("[LOGIN]: Error en mover puntero")
-					return
+					return false
 				}
 				if err := binary.Read(file, binary.LittleEndian, &superbloque); err != nil {
 					color.Red("[LOGIN]: Error en la lectura del superbloque")
-					return
+					return false
 				}
 				break
 			}
@@ -94,31 +94,31 @@ func LOGIN_EXECUTE(usuario string, password string, id_disco string) {
 		ebr := structures.EBR{}
 		if _, err := file.Seek(int64(particion_montada.Particion_L.Part_start), 0); err != nil {
 			color.Red("[LOGIN]: Error en mover puntero")
-			return
+			return false
 		}
 		if err := binary.Read(file, binary.LittleEndian, &ebr); err != nil {
 			color.Red("[LOGIN]: Error en la lectura del superbloque")
-			return
+			return false
 		}
 		if ebr.Part_mount != 1 {
 			color.Red("[LOGIN]: Particion no formateada")
-			return
+			return false
 		}
 
 		//Obtener SuperBloque
 		if _, err := file.Seek(int64(particion_montada.Particion_L.Part_start+size.SizeSuperBloque()), 0); err != nil {
 			color.Red("[LOGIN]: Error en mover puntero")
-			return
+			return false
 		}
 		if err := binary.Read(file, binary.LittleEndian, &superbloque); err != nil {
 			color.Red("[LOGIN]: Error en la lectura del superbloque")
-			return
+			return false
 		}
 	}
 
 	contenido, eco := utils.GetContent(superbloque.S_inode_start+size.SizeTablaInodo(), particion_montada.Path)
 	if !eco {
-		return
+		return false
 	}
 	contenido_split := strings.Split(contenido, "\n")
 	for _, con := range contenido_split {
@@ -142,7 +142,7 @@ func LOGIN_EXECUTE(usuario string, password string, id_disco string) {
 	}
 	global.UsuarioLogeado = global.DefaultUser
 	color.Red("[LOGIN]: Usuario o Contraseña o Id de Disco incorrectos")
-	return
+	return false
 
 c1:
 	for _, con := range contenido_split {
@@ -161,11 +161,12 @@ c1:
 	global.GrupoUsuarioLoggeado = global.DefaultGrupoUsuario
 	global.UsuarioLogeado = global.DefaultUser
 	color.Red("[LOGIN]: Grupo no encontrado")
-	return
+	return false
 
 c2:
 	// Ya que si paso por todo
 	global.UsuarioLogeado.Mounted = particion_montada
 	global.UsuarioLogeado.Logged_in = true
 	color.Green("[LOGIN]: Usuario «" + usuario + "» Loggeado exitosamente (id): -> " + id_disco)
+	return true
 }

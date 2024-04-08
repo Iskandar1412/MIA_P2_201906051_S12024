@@ -6,24 +6,24 @@ function Partitions( props ) {
     const handleClickButton = (event) => {
         const valorBoton = event.target.getAttribute('data-value');
         // console.log(props.disco.particiones.length)
-        for (let i = 0; i  < props.disco.particiones.length; i++){
+        for (let i = 0; i  < props.disco.Mbr_partitions.length; i++){
             //console.log(props.disco.particiones[i])
-            if (props.disco.particiones[i].particion === valorBoton) {
+            if (props.disco.Mbr_partitions[i].Particion === valorBoton) {
                 // console.log(props.disco.particiones[i])
                 //verificar que sea ext2 o ext3
-                if (props.disco.particiones[i].type === 'E') {
+                if (props.disco.Mbr_partitions[i].Type === 'E') {
                     alert("Disco Extendido no se puede usar")
                     return
                 }
-                if (props.disco.particiones[i].status === -1) {
+                if (props.disco.Mbr_partitions[i].Status === -1) {
                     alert("Disco no montado")
                     return
                 }
-                if (props.disco.particiones[i].status !== 1) {
+                if (props.disco.Mbr_partitions[i].Status !== 1) {
                     alert("Disco no formateado como EXT2 o EXT3")
                     return
                 } 
-                props.seleccionParticion(props.disco.particiones[i].particion)
+                props.seleccionParticion(props.disco.Mbr_partitions[i].Particion)
                 props.onSeleccionar('login')
             }
         }
@@ -39,19 +39,19 @@ function Partitions( props ) {
             
             <div className="particiones">
 
-                {props.disco.particiones.map((item, index) => (
+                {props.disco.Mbr_partitions.map((item, index) => (
                     <button 
                         key={index}
                         className="buttonPartition"
-                        data-value={item.particion}
+                        data-value={item.Particion}
                         onClick={handleClickButton}
                     >
                         <img
                             src={particion}
                             alt="Imagen del botón" 
-                            data-value={item.particion}
+                            data-value={item.Particion}
                         />
-                        <span className='valor-button' data-value={item.particion}>{item.particion}</span>
+                        <span className='valor-button' data-value={item.Particion}>{item.Particion}</span>
                     </button>
                 ))}
                 

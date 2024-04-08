@@ -138,12 +138,14 @@ func Report_TREE(name string, path string, ruta string, id_disco string) {
 								fmt.Fprintln(dot, utils.TreeBlock(apuntador1.B_pointers[j], 2, disco_buscado.Path))
 								fmt.Fprintln(dot, utils.Conexiones(inodo.I_block[i], apuntador1.B_pointers[j]))
 								for k := 0; k < 16; k++ {
-									if inodo.I_type == 0 {
-										fmt.Fprintln(dot, utils.TreeBlock(apuntador2.B_pointers[k], 0, disco_buscado.Path))
-									} else if inodo.I_type == 1 {
-										fmt.Fprintln(dot, utils.TreeBlock(apuntador2.B_pointers[k], 1, disco_buscado.Path))
+									if apuntador2.B_pointers[k] != -1 {
+										if inodo.I_type == 0 {
+											fmt.Fprintln(dot, utils.TreeBlock(apuntador2.B_pointers[k], 0, disco_buscado.Path))
+										} else if inodo.I_type == 1 {
+											fmt.Fprintln(dot, utils.TreeBlock(apuntador2.B_pointers[k], 1, disco_buscado.Path))
+										}
+										fmt.Fprintln(dot, utils.Conexiones(apuntador1.B_pointers[j], apuntador2.B_pointers[k]))
 									}
-									fmt.Fprintln(dot, utils.Conexiones(apuntador1.B_pointers[j], apuntador2.B_pointers[k]))
 								}
 							}
 						}

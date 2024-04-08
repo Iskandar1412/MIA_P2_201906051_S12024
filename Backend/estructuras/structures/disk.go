@@ -29,3 +29,16 @@ type MBR struct { //153bytes
 	Dsk_fit            byte         //tipo de ajuste de particion B (best) F (first) W (worst)
 	Mbr_partitions     [4]Partition //estructura con informacion de las 4 particiones
 }
+
+type Particion_Enviar struct {
+	Particion  string
+	Type       string
+	Status     int8
+	Id_mounted string
+}
+
+type MBR_Obtener struct {
+	Disco          string
+	Disco_Path     string
+	Mbr_partitions [4]Particion_Enviar
+}

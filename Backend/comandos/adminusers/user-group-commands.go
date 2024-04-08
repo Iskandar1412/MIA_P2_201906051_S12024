@@ -7,7 +7,7 @@ import (
 	"github.com/fatih/color"
 )
 
-func UserCommandProps(command string, instructions []string) {
+func UserCommandProps(command string, instructions []string) bool {
 	var _user string
 	var _pass string
 	var _id string
@@ -15,18 +15,18 @@ func UserCommandProps(command string, instructions []string) {
 		valor_usuario, err := Values_LOGIN(instructions)
 		if !err {
 			color.Red("[Login]: Error to assign values")
-			return
+			return false
 		} else {
 			_user = utils.ToString(valor_usuario.User[:])
 			_pass = utils.ToString(valor_usuario.Password[:])
 			_id = utils.ToString(valor_usuario.ID_Particion[:])
-			LOGIN_EXECUTE(_user, _pass, _id)
+			return LOGIN_EXECUTE(_user, _pass, _id)
 		}
 	} else if strings.ToUpper(command) == "LOGOUT" {
-		LOGOUT_EXECUTE()
+		return LOGOUT_EXECUTE()
 	} else {
 		color.Red("[UserComamand]: Internal Error")
-		return
+		return false
 	}
 }
 

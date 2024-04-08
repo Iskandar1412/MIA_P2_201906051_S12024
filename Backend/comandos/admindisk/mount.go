@@ -5,7 +5,6 @@ import (
 	"os"
 	"proyecto/comandos/global"
 	"proyecto/comandos/utils"
-	"proyecto/estructuras/size"
 	"proyecto/estructuras/structures"
 	"reflect"
 	"strconv"
@@ -132,30 +131,30 @@ func MOUNT_EXECUTE(_driveletter byte, _name []byte) {
 	}
 
 	// Caso de ser particion logica
-	logica := structures.EBR{}
-	if temp, ok := conjunto[0].(structures.EBR); ok {
-		v := reflect.ValueOf(temp)
-		reflect.ValueOf(&logica).Elem().Set(v)
+	// logica := structures.EBR{}
+	// if temp, ok := conjunto[0].(structures.EBR); ok {
+	// 	v := reflect.ValueOf(temp)
+	// 	reflect.ValueOf(&logica).Elem().Set(v)
 
-		// Inicio SB
-		inicio = logica.Part_start + size.SizeEBR()
-		// Verificacion
-		mount_temp.Es_Particion_P = false
-		mount_temp.Es_Particion_L = true
-		//id no existe en ebr
-		mount_temp.Type = 'L'
-		logica.Part_mount = 0
-		mount_temp.Particion_L = logica
+	// 	// Inicio SB
+	// 	inicio = logica.Part_start + size.SizeEBR()
+	// 	// Verificacion
+	// 	mount_temp.Es_Particion_P = false
+	// 	mount_temp.Es_Particion_L = true
+	// 	//id no existe en ebr
+	// 	mount_temp.Type = 'L'
+	// 	logica.Part_mount = 0
+	// 	mount_temp.Particion_L = logica
 
-		if _, err := file.Seek(int64(logica.Part_start), 0); err != nil {
-			color.Red("[Mount]: Error en mover puntero")
-			return
-		}
-		if err := binary.Write(file, binary.LittleEndian, &logica); err != nil {
-			color.Red("[Mount]: Error en la escritura del EBR")
-			return
-		}
-	}
+	// 	if _, err := file.Seek(int64(logica.Part_start), 0); err != nil {
+	// 		color.Red("[Mount]: Error en mover puntero")
+	// 		return
+	// 	}
+	// 	if err := binary.Write(file, binary.LittleEndian, &logica); err != nil {
+	// 		color.Red("[Mount]: Error en la escritura del EBR")
+	// 		return
+	// 	}
+	// }
 
 	global.Mounted_Partitions = append(global.Mounted_Partitions, mount_temp)
 	superblock := structures.SuperBloque{}

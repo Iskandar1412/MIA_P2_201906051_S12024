@@ -7,10 +7,10 @@ import (
 	"github.com/fatih/color"
 )
 
-func LOGOUT_EXECUTE() {
+func LOGOUT_EXECUTE() bool {
 	if !global.UsuarioLogeado.Logged_in {
 		color.Red("[LOGOUT]: No hay una sesion activa")
-		return
+		return false
 	}
 
 	usuario_temp := global.UsuarioLogeado
@@ -18,4 +18,5 @@ func LOGOUT_EXECUTE() {
 	global.GrupoUsuarioLoggeado = global.DefaultGrupoUsuario
 
 	color.Green("[LOGOUT]: Usuario «" + utils.ToString(usuario_temp.User[:]) + "» cerro secion exitosamente - (ID): -> " + utils.ToString(usuario_temp.ID_Particion[:]))
+	return true
 }

@@ -18,65 +18,66 @@ function App() {
     // console.log(ex)
     var informacion = [
       {
-        disco: "a.dks",
-        particiones: [
+        Disco: "a.dks",
+        Mbr_partitions: [
           {
-            particion: "particion1",
-            type: "E",
-            status: -1,
-            id_mounted: ""
+            Particion: "particion1",
+            Type: "E",
+            Status: -1,
+            Id_mounted: ""
           },
           {
-            particion: "particion2",
-            type: "P",
-            status: 1,
-             id_mounted: "A151"
+            Particion: "particion2",
+            Type: "P",
+            Status: 1,
+             Id_mounted: "A151"
           },
           {
-            particion: "particion3",
-            type: "P",
-            status: 0,
-             id_mounted: "A251"
+            Particion: "particion3",
+            Type: "P",
+            Status: 0,
+             Id_mounted: "A251"
           },
           {
-            particion: "particion4",
-            type: "P",
-            status: -1,
-             id_mounted: ""
+            Particion: "particion4",
+            Type: "P",
+            Status: -1,
+             Id_mounted: ""
           }
         ]
       },
       {
-        disco: "b.dks",
-        particiones: [
+        Disco: "b.dks",
+        Mbr_partitions: [
           {
-            particion: "particion6",
-            type: "P",
-            status: -1,
-            id_mounted: ""
+            Particion: "particion6",
+            Type: "P",
+            Status: -1,
+            Id_mounted: ""
           },
           {
-            particion: "particion7",
-            type: "P",
-            status: 1,
-            id_mounted: "B151"
+            Particion: "particion7",
+            Type: "P",
+            Status: 1,
+            Id_mounted: "B151"
           },
           {
-            particion: "particion8",
-            type: "P",
-            status: 0,
-            id_mounted: "B251"
+            Particion: "particion8",
+            Type: "P",
+            Status: 0,
+            Id_mounted: "B251"
           },
           {
-            particion: "particion9",
-          type: "E",
-          status: -1,
-          id_mounted: ""
+            Particion: "particion9",
+          Type: "E",
+          Status: -1,
+          Id_mounted: ""
           }
         ]
       }
     ]
     setCommand(informacion)
+    console.log(command)
     //console.log("comando", command)
   }
 

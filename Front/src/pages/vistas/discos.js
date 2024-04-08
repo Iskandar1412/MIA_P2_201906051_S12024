@@ -9,10 +9,11 @@ function Discos( props ) {
         // console.log(props.command)
         
         for (let i = 0; i < props.command.length; i++) {
-            if (props.command[i].disco === valorBoton) {
+            if (props.command[i].Disco === valorBoton) {
                 // console.log(props.command[i])
                 props.cambiarDiscos(props.command[i])
                 props.onSeleccionar('particiones')
+                
             }
         }
         // console.log(props.comandoDiscos)
@@ -27,15 +28,15 @@ function Discos( props ) {
                     <button 
                         key={index}
                         className="buttonDisk"
-                        data-value={item.disco}
+                        data-value={item.Disco}
                         onClick={handleClickButton}
                     >
                         <img
                             src={disco}
                             alt="Imagen del botón" 
-                            data-value={item.disco}
+                            data-value={item.Disco}
                         />
-                        <span className='valor-button' data-value={item.disco}>{item.disco}</span>
+                        <span className='valor-button' data-value={item.Disco}>{item.Disco}</span>
                     </button>
                 ))}
                 
