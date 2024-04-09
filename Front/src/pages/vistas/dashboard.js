@@ -54,8 +54,9 @@ function Dashboard ( props ) {
         // console.log(ValorBoton);
         //se usará cat para verificar si puede o no abrir archivo
         try {
+            console.log(path)
             let objeto = {
-                comando: 'cat -file="' + ValorBoton + '"'
+                comando: 'cat -file="' + path + '/' + ValorBoton + '"'
             }
             // console.log(objeto)
             const res = await axios.post(pathbackend + "/cat", objeto)
