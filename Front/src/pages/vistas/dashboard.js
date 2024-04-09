@@ -54,7 +54,7 @@ function Dashboard ( props ) {
         // console.log(ValorBoton);
         //se usará cat para verificar si puede o no abrir archivo
         try {
-            console.log(path)
+            // console.log(path)
             let objeto = {
                 comando: 'cat -file="' + path + '/' + ValorBoton + '"'
             }
