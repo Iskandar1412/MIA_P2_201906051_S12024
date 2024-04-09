@@ -13,7 +13,7 @@ import (
 
 // var Particiones_Montadas []string
 
-func GlobalCom(lista []string) {
+func GlobalCom(lista []string) bool {
 	for _, comm := range lista {
 		// Administracion de Discos
 		if (strings.HasPrefix(strings.ToLower(comm), "mkdisk")) || (strings.HasPrefix(strings.ToLower(comm), "fdisk")) || (strings.HasPrefix(strings.ToLower(comm), "rmdisk")) || (strings.HasPrefix(strings.ToLower(comm), "mount")) || (strings.HasPrefix(strings.ToLower(comm), "unmount")) || (strings.HasPrefix(strings.ToLower(comm), "mkfs")) {
@@ -40,7 +40,7 @@ func GlobalCom(lista []string) {
 		} else if (strings.HasPrefix(strings.ToLower(comm), "login")) || (strings.HasPrefix(strings.ToLower(comm), "logout")) {
 			comandos := ObtenerComandos(comm)
 			command := getCommand(strings.ToLower(comm), "login", "logout")
-			adminusers.UserCommandProps(strings.ToUpper(command), comandos)
+			return adminusers.UserCommandProps(strings.ToUpper(command), comandos)
 			// Grupo
 		} else if (strings.HasPrefix(strings.ToLower(comm), "mkgrp")) || (strings.HasPrefix(strings.ToLower(comm), "rmgrp")) || (strings.HasPrefix(strings.ToLower(comm), "mkusr")) || (strings.HasPrefix(strings.ToLower(comm), "rmusr")) || (strings.HasPrefix(strings.ToLower(comm), "mkgrp")) {
 			comandos := ObtenerComandos(comm)
@@ -50,4 +50,5 @@ func GlobalCom(lista []string) {
 			color.Red("Comando no Reconocido")
 		}
 	}
+	return true
 }

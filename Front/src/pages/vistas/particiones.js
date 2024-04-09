@@ -1,7 +1,20 @@
 import React from 'react';
 import particion from '../../img/Partition.png';
+import axios from 'axios'
 
 function Partitions( props ) {
+    const path = "http://localhost:8080"
+    const Carpetas = async () => {
+        try {
+            const res = await axios.get(path+'/obtain-carpetas-archivos')
+            if (res.status === 200) {
+                const jsonData = JSON.parse(res.data.datos);
+                // console.log(jsonData)
+                // console.log(jsonData)
+                props.cambiarDirectorios(jsonData)
+            }
+        } catch (e) { }
+    }
 
     const handleClickButton = (event) => {
         const valorBoton = event.target.getAttribute('data-value');
@@ -19,12 +32,27 @@ function Partitions( props ) {
                     alert("Disco no montado")
                     return
                 }
+                if (props.disco.Mbr_partitions[i].Id_mounted === "") {
+                    alert("No tiene ID el disco por lo que esta desmontado")
+                    return
+                }
                 if (props.disco.Mbr_partitions[i].Status !== 1) {
                     alert("Disco no formateado como EXT2 o EXT3")
                     return
-                } 
+                }
+                console.log(localStorage.getItem('user'))
+                var usuario_logeado = localStorage.getItem('user')
+                if (usuario_logeado !== null) {
+                    props.seleccionParticion(props.disco.Mbr_partitions[i].Particion)
+                    localStorage.setItem('id_particion', props.disco.Mbr_partitions[i].Id_mounted)
+                    Carpetas()
+                    props.onSeleccionar('dashboard')
+                    break
+                }
                 props.seleccionParticion(props.disco.Mbr_partitions[i].Particion)
+                localStorage.setItem('id_particion', props.disco.Mbr_partitions[i].Id_mounted)
                 props.onSeleccionar('login')
+                break
             }
         }
         // console.log("Valor del botón:", valorBoton);
@@ -40,19 +68,21 @@ function Partitions( props ) {
             <div className="particiones">
 
                 {props.disco.Mbr_partitions.map((item, index) => (
-                    <button 
-                        key={index}
-                        className="buttonPartition"
-                        data-value={item.Particion}
-                        onClick={handleClickButton}
-                    >
-                        <img
-                            src={particion}
-                            alt="Imagen del botón" 
+                    item.Particion !== "" && (
+                        <button 
+                            key={index}
+                            className="buttonPartition"
                             data-value={item.Particion}
-                        />
-                        <span className='valor-button' data-value={item.Particion}>{item.Particion}</span>
-                    </button>
+                            onClick={handleClickButton}
+                        >
+                            <img
+                                src={particion}
+                                alt="Imagen del botón" 
+                                data-value={item.Particion}
+                            />
+                            <span className='valor-button' data-value={item.Particion}>{item.Particion}</span>
+                        </button>
+                    )
                 ))}
                 
             </div>

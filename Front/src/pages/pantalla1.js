@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios'
 
 function getCommand(comm, ...commands) {
     comm = comm.toLowerCase();
@@ -11,10 +12,11 @@ function getCommand(comm, ...commands) {
 }
 
 
-function Pantalla1({ info, carpetas, dots }) {
+function Pantalla1({ info, carpetas }) {
     const [command, setCommand] = useState('');
     const [commandsSaved, setCommandSaved] = useState([]);
     const path = "http://localhost:8080"
+
     const HandleCommandChange = (event) => {
         setCommand(event.target.value);
     };
@@ -26,40 +28,64 @@ function Pantalla1({ info, carpetas, dots }) {
         }
     }
 
-    const ObtenerInformacionMBR = async () => {
+    const ObtenerInformacionMBR2 = async () => {
         try {
-            const res = await fetch(path + "/obtain-mbr", {
-                method: 'GET',
-                headers: { 'Content-Type': 'application/json' },
-            })
+            const res = await axios.get(path+"/obtainmbr")
 
-            if (res.ok) {
-                const response = await res.json();
-                console.log("siuuuuuuuu", response)
-                info(command)
+            if (res.status === 200) {
+                console.log(res.data.datos)
+                const jsonData = JSON.parse(res.data.datos)
+                info(jsonData)
             }
-        } catch (e) {
-            console.error(e)
-        }
+        } catch (e) { }
     }
+
+    const EnviarInformacionCarpetas = async () => {
+        try {
+            const res = await axios.get(path+'/obtain-carpetas-archivos')
+            if (res.status === 200) {
+                const jsonData = JSON.parse(res.data.datos);
+                // console.log(jsonData)
+                // console.log(jsonData)
+                carpetas(jsonData)
+            }
+        } catch (e) { }
+    }
+
+    useEffect(() => {
+        const ObtenerInformacionMBR = async () => {
+            try {
+                const res = await axios.get(path+"/obtainmbr")
+
+                if (res.status === 200) {
+                    // console.log(res.data.datos)
+                    const jsonData = JSON.parse(res.data.datos)
+                    info(jsonData)
+                }
+            } catch (e) { }
+        }
+        ObtenerInformacionMBR()
+        return () => {
+            
+        };
+    },  [])
 
     const postInformacion = async (objeto) => {
         try {
-            const response = await fetch(path + "/command", {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(objeto)
-            })
-
-            if (response.ok) {
-                ObtenerInformacionMBR()
-                console.log("ok")
+            const res = await axios.post(path+'/command', objeto);
+            if (res.status === 200) {
+                ObtenerInformacionMBR2()
             }
-            
-        } catch (e) {
-            console.error("Error")
-            info(command)
-        }
+        } catch (e) { }
+    }
+
+    const postContenido = async (objeto) => {
+        try {
+            const res = await axios.post(path+'/command', objeto);
+            if (res.status === 200) {
+                EnviarInformacionCarpetas()
+            }
+        } catch (e) { }
     }
 
     const handlePostCommand =  () => {
@@ -78,20 +104,18 @@ function Pantalla1({ info, carpetas, dots }) {
                 postInformacion(objeto)
                 setCommandSaved([...commandsSaved, command]);
                 setCommand('');
+                ObtenerInformacionMBR2()
             } else if (["mkfile", "remove", "edit", "rename", "mkdir", "copy", "move", "chown", "chgrp", "chmod", "mkgrp", "rmgrp", "mkusr", "rmusr"].includes(com2)) {
                 //actualizar informacion
-                carpetas(command)
                 objeto.comando = command
+                //postear siguientes comandos
+                postContenido(objeto)
                 setCommandSaved([...commandsSaved, command]);
                 setCommand('');
-            } else if (["cat", "find"].includes(com2)) {
-                //no suceden acciones
-                objeto.comando = command
-                setCommandSaved([...commandsSaved, command]);
-                setCommand('');
+                EnviarInformacionCarpetas()
             } else if (["rep"].includes(com3)){
                 //actualizar reportes
-                dots(command)
+                //postear os grafos ---faltante
                 objeto.comando = command
                 setCommandSaved([...commandsSaved, command]);
                 setCommand('');

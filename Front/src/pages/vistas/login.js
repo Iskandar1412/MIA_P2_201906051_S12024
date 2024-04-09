@@ -1,30 +1,47 @@
 import React, { useState } from 'react';
 import frame from '../../img/frame1.jpg'
+import axios from 'axios'
 
 function Login( props ) {
     const [password, setPassword] = useState("")
     const [user, setUser] = useState("");
-    
+    const path = "http://localhost:8080"
 
-    const enviarDirectorios = () => {
+    const enviarDirectorios = async () => {
         //se usará un fetch para obtener los directorios y archivos
-        var dir = [
-            { nombre: "archivo.txt", tipo: "archivo", contenido: "Contenido del archivo 1" },
-            { nombre: "archivo2", tipo: "archivo", contenido: "Contenido del archivo 1" },
-                { nombre: "carpeta1", tipo: "carpeta", contenido: [
-                    { nombre: "archivo2", tipo: "archivo", contenido: "Contenido del archivo 2" },
-                    { nombre: "carpeta2", tipo: "carpeta", contenido: [
-                        { nombre: "archivo3", tipo: "archivo", contenido: "Contenido del archivo 3" }
-                    ]}
-                ]
+        try {
+            const res = await axios.get(path+'/obtain-carpetas-archivos')
+            if (res.status === 200) {
+                const jsonData = JSON.parse(res.data.datos);
+                // console.log(jsonData)
+                // console.log(jsonData)
+                props.cambiarDirectorios(jsonData)
             }
-        ]
-        /*
-            */
-        props.cambiarDirectorios(dir)
+        } catch (e) { }
+        
     }
 
-    const handleLogin = (event) => {
+    const ingresarSecion = async (objeto) => {
+        try { 
+            console.log(objeto)
+            const res = await axios.post(path + "/login", objeto)
+            if (res.status === 200) {
+                enviarDirectorios()
+                setUser("")
+                setPassword("")
+
+                localStorage.setItem('user', user)
+                alert("Bienvenido")
+                props.onSeleccionar('dashboard')
+            } else {
+                alert("Usuario o contraseña incorrecta")
+            }
+        } catch (e) { 
+            alert("Usuario o contraseña incorrectos")
+        }
+    }
+
+    const handleLogin =  (event) => {
         event.preventDefault();
         if (user === "" && password === "") {
             alert("Campos vacios");
@@ -37,14 +54,14 @@ function Login( props ) {
             alert("Casilla de Password vacio")
             return
         }
-        
+        let objeto = {
+            comando: ""
+        }
+        var id = localStorage.getItem("id_particion")
+        objeto.comando = "login -user=" + user + " -pass=" + password + " -id=" + id
         //Verificar inicio seción
-        //console.log(user, password)
-        enviarDirectorios()
-        setUser("")
-        setPassword("")
-        localStorage.setItem('user', user)
-        props.onSeleccionar('dashboard')
+        // login -user -password -id_particion
+        ingresarSecion(objeto)
     }
 
     return (

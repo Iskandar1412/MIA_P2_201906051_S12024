@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import carpeta from '../../img/Carpeta1.png'
 import archivo from '../../img/File.png'
+import axios from 'axios'
 
 function Dashboard ( props ) {
     const [userDash, setUserDash] = useState("")
@@ -8,7 +9,7 @@ function Dashboard ( props ) {
     const [historial, setHistorial] = useState([]);
     const [contenidoArchivo, setContenidoArchivo] = useState("");
     const [data, setData] = useState([]);
-
+    const pathserver = "http://localhost:8080"
     
     
     useEffect(() => {
@@ -18,20 +19,39 @@ function Dashboard ( props ) {
         }
         //console.log("dir", props.dir,  "carpeta", props.capetas)
         setData(props.dir)
-        if ((props.capetas === undefined) || (props.capetas.length === 0) || (props.capetas.length < props.dir.length)) {
-            setData(props.dir)
-        } else {
-            setData(props.capetas)
-        }
+        // console.log("props", props.dir)
+        // if ((props.capetas === undefined) || (props.capetas.length === 0) || (props.capetas.length < props.dir.length)) {
+        //     setData(props.dir)
+        // } else {
+        //     setData(props.capetas)
+        // }
         setUserDash(uss)
     }, [props])
 
-    const handleEndSession = () => {
-        localStorage.removeItem('user')
-        props.onSeleccionar('login')
+    const handleEndSession = async () => {
+        let objeto = {
+            comando: "logout"
+        }
+        
+        try { 
+            const res = await axios.post(pathserver + "/logout", objeto)
+            console.log(res)
+            if (res.status === 200) {
+                localStorage.removeItem('user')
+                localStorage.removeItem('id_particion')
+                props.onSeleccionar('particiones')
+            } else {
+                alert("Error")
+            }
+        } catch (e) { 
+            alert("No hay usuario con secion iniciada")
+        }
     }
 
-    const handleMostrarContenido = (contenido) => {
+    const handleMostrarContenido = (contenido, event) => {
+        const ValorBoton = event.target.getAttribute('data-value');
+        console.log(ValorBoton);
+        //se usará cat para verificar si puede o no abrir archivo
         setContenidoArchivo(contenido);
     };
 
@@ -73,13 +93,15 @@ function Dashboard ( props ) {
                         <button 
                             key={item.nombre}
                             className="buttonDisk"
-                            onClick={() => handleMostrarContenido(item.contenido)}
+                            data-value={item.nombre}
+                            onClick={(event) => handleMostrarContenido(item.contenido, event)}
                         >
                             <img
                                 src={archivo}
+                                data-value={item.nombre}
                                 alt="Imagen del botón"
                             />
-                            <span>{item.nombre}</span>
+                            <span data-value={item.nombre}>{item.nombre}</span>
                         </button>
                     ) : (
                         <button 
@@ -101,7 +123,7 @@ function Dashboard ( props ) {
                         <div className="boton-exit">
                             <button onClick={handleCerrarContenido} className="button-x" />
                         </div>
-                        <div>{contenidoArchivo}</div>
+                        <div className="contenido-modal">{contenidoArchivo}</div>
                     </div>
                 )}
             </div>

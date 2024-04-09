@@ -5,7 +5,7 @@ import Login from "./vistas/login";
 import Dashboard from "./vistas/dashboard";
 
 
-function Pantalla2({ command, carpetasOb }) {
+function Pantalla2({ command, carpetasOb, carpetas }) {
     const [componenteActual, setComponenteActual] = useState('discos');
 
     const cambiarComponente = (nuevoComponente) => {
@@ -23,21 +23,20 @@ function Pantalla2({ command, carpetasOb }) {
         setParticionSeleccionada(particion)
     }
 
-    const [directorios, setDirectorios] = useState([]);
+    
     const cambiarDirectorios = (dir) => {
-        
-        setDirectorios(dir)
+        carpetas(dir)
     }
 
     let componenteMostrar;
     if (componenteActual === 'discos') {
         componenteMostrar = <Discos onSeleccionar={cambiarComponente} command={commandAnterior} cambiarDiscos={cambiarNuevoCommandDisk} />
     } else if (componenteActual === 'particiones') {
-        componenteMostrar = <Partitions  onSeleccionar={cambiarComponente} disco={newCommandDisk} seleccionParticion={cambiarParticionSeleccionada} />
+        componenteMostrar = <Partitions  onSeleccionar={cambiarComponente} disco={newCommandDisk} seleccionParticion={cambiarParticionSeleccionada} cambiarDirectorios={cambiarDirectorios} />
     } else if (componenteActual === 'login') {
         componenteMostrar = <Login  onSeleccionar={cambiarComponente} particion={particionSeleccionada} cambiarDirectorios={cambiarDirectorios} />
     } else if (componenteActual === 'dashboard') {
-        componenteMostrar = <Dashboard onSeleccionar={cambiarComponente} dir={directorios} capetas={carpetasOb} />
+        componenteMostrar = <Dashboard onSeleccionar={cambiarComponente} dir={carpetasOb} capetas={carpetasOb} />
     }
 
     return (
