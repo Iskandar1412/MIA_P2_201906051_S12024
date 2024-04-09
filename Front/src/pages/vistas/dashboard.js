@@ -49,11 +49,28 @@ function Dashboard ( props ) {
         }
     }
 
-    const handleMostrarContenido = (contenido, event) => {
+    const handleMostrarContenido = async (contenido, event) => {
         const ValorBoton = event.target.getAttribute('data-value');
-        console.log(ValorBoton);
+        // console.log(ValorBoton);
         //se usará cat para verificar si puede o no abrir archivo
-        setContenidoArchivo(contenido);
+        try {
+            let objeto = {
+                comando: 'cat -file="' + ValorBoton + '"'
+            }
+            // console.log(objeto)
+            const res = await axios.post(pathbackend + "/cat", objeto)
+            // console.log(res)
+            if (res.status === 200) {
+                
+                setContenidoArchivo(contenido);
+            } else {
+                alert("No tiene los permisos necesarios")
+                return
+            }
+        } catch (e) {
+            alert("Usuario sin permisos necesarios")
+            return
+        }
     };
 
     const handleClick = (contenido, nombre) => {

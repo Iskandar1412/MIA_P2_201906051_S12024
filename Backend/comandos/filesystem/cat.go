@@ -29,17 +29,17 @@ func Values_CAT(instructions []string) ([]string, bool) {
 	return stringEnviar, true
 }
 
-func CAT_EXECUTE(files []string) {
+func CAT_EXECUTE(files []string) bool {
 	if !global.UsuarioLogeado.Logged_in {
 		color.Red("[CAT]: Usuario no logeado")
-		return
+		return false
 	}
 
 	nodo := global.UsuarioLogeado.Mounted
 	file, err := os.OpenFile(nodo.Path, os.O_RDWR, 0666)
 	if err != nil {
 		color.Red("[CAT]: Error al abrir archivo")
-		return
+		return false
 	}
 	defer file.Close()
 
@@ -49,14 +49,14 @@ func CAT_EXECUTE(files []string) {
 		if nodo.Es_Particion_L {
 			if nodo.Particion_L.Part_mount != 1 {
 				color.Red("[CAT]: El disco (logico) no se ha formateado -> " + utils.ToString(nodo.Particion_L.Name[:]) + " - (ID): -> " + utils.ToString(nodo.ID_Particion[:]))
-				return
+				return false
 			} else {
 				start = nodo.Particion_L.Part_start + size.SizeEBR()
 			}
 		} else if nodo.Es_Particion_P {
 			if nodo.Particion_P.Part_status != 1 {
 				color.Red("[CAT]: El disco (primario) no se ha formateado -> " + utils.ToString(nodo.Particion_P.Part_name[:]) + " - (ID): -> " + utils.ToString(nodo.ID_Particion[:]))
-				return
+				return false
 			} else {
 				start = nodo.Particion_P.Part_start
 			}
@@ -64,17 +64,17 @@ func CAT_EXECUTE(files []string) {
 
 		if _, err := file.Seek(int64(start), 0); err != nil {
 			color.Red("[CAT]: Error en mover puntero")
-			return
+			return false
 		}
 		if err := binary.Read(file, binary.LittleEndian, &utils.Sb_System); err != nil {
 			color.Red("[CAT]: Error en la lectura del SuperBloque")
-			return
+			return false
 		}
 
 		rutaS := utils.SplitRuta(path_xyz)
 		if len(rutaS) == 0 {
 			color.Red("[CAT]: Ruta invalida")
-			return
+			return false
 		}
 
 		var inodo structures.TablaInodo
@@ -84,7 +84,7 @@ func CAT_EXECUTE(files []string) {
 			posInodoF = utils.GetInodoFSystem(rutaS, 0, int32(len(rutaS)-1), utils.Sb_System.S_inode_start, nodo.Path)
 			if posInodoF == -1 {
 				color.Red("[CAT]: Archivo no encontrado")
-				return
+				return false
 			}
 		} else {
 			posInodoF = utils.Sb_System.S_inode_start
@@ -92,21 +92,21 @@ func CAT_EXECUTE(files []string) {
 
 		if !utils.ValidarPermisoRSystem(posInodoF, nodo.Path) {
 			color.Red("[CAT]: No se puede leer el archivo -> <<<" + path_xyz + ">>> por falta de permisos")
-			return
+			return false
 		}
 
 		if _, err := file.Seek(int64(posInodoF), 0); err != nil {
 			color.Red("[CAT]: Error en mover puntero")
-			return
+			return false
 		}
 		if err := binary.Read(file, binary.LittleEndian, &inodo); err != nil {
 			color.Red("[CAT]: Error en la lectura del archivo")
-			return
+			return false
 		}
 
 		if inodo.I_type == 0 {
 			color.Red("[CAT]: La direccion no hace referencia a un archivo -> " + path_xyz)
-			return
+			return false
 		}
 
 		inodo.I_atime = utils.ObFechaInt()
@@ -119,11 +119,11 @@ func CAT_EXECUTE(files []string) {
 
 		if _, err := file.Seek(int64(posInodoF), 0); err != nil {
 			color.Red("[MKDIR]: Error en mover puntero")
-			return
+			return false
 		}
 		if err := binary.Write(file, binary.LittleEndian, &inodo); err != nil {
 			color.Red("[MKDIR]: Error en la escritura del archivo")
-			return
+			return false
 		}
 
 		if utils.Sb_System.S_filesistem_type == 3 {
@@ -132,4 +132,5 @@ func CAT_EXECUTE(files []string) {
 		}
 		//####----####----####----####----####----####
 	}
+	return true
 }

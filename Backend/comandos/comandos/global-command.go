@@ -27,11 +27,16 @@ func GlobalCom(lista []string) bool {
 		} else if strings.HasPrefix(strings.ToLower(comm), "pause") {
 			Pause()
 			// Files
-		} else if (strings.HasPrefix(strings.ToLower(comm), "mkfile")) || (strings.HasPrefix(strings.ToLower(comm), "cat")) || (strings.HasPrefix(strings.ToLower(comm), "remove")) || (strings.HasPrefix(strings.ToLower(comm), "edit")) || (strings.HasPrefix(strings.ToLower(comm), "rename")) || (strings.HasPrefix(strings.ToLower(comm), "mkdir")) || (strings.HasPrefix(strings.ToLower(comm), "copy")) || (strings.HasPrefix(strings.ToLower(comm), "move")) || (strings.HasPrefix(strings.ToLower(comm), "find")) {
+		} else if (strings.HasPrefix(strings.ToLower(comm), "mkfile")) || (strings.HasPrefix(strings.ToLower(comm), "remove")) || (strings.HasPrefix(strings.ToLower(comm), "edit")) || (strings.HasPrefix(strings.ToLower(comm), "rename")) || (strings.HasPrefix(strings.ToLower(comm), "mkdir")) || (strings.HasPrefix(strings.ToLower(comm), "copy")) || (strings.HasPrefix(strings.ToLower(comm), "move")) || (strings.HasPrefix(strings.ToLower(comm), "find")) {
 			comandos := ObtenerComandos(comm)
-			command := getCommand(strings.ToLower(comm), "mkfile", "cat", "remove", "edit", "rename", "mkdir", "copy", "move", "find")
+			command := getCommand(strings.ToLower(comm), "mkfile", "remove", "edit", "rename", "mkdir", "copy", "move", "find")
 			filesystem.FilesCommandProps(strings.ToUpper(command), comandos)
 			// Permisos
+		} else if strings.HasPrefix(strings.ToLower(comm), "cat") { // solo para cat
+			comandos := ObtenerComandos(comm)
+			command := getCommand(strings.ToLower(comm), "cat")
+			return filesystem.FilesCommandProps(strings.ToUpper(command), comandos)
+
 		} else if (strings.HasPrefix(strings.ToLower(comm), "chown")) || (strings.HasPrefix(strings.ToLower(comm), "chgrp")) || (strings.HasPrefix(strings.ToLower(comm), "chmod")) {
 			comandos := ObtenerComandos(comm)
 			command := getCommand(strings.ToLower(comm), "chown", "chgrp", "chmod")

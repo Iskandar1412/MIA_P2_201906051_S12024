@@ -28,7 +28,7 @@ func main() {
 	mux.HandleFunc("/reportesobtener", handleReportsObtener)
 	mux.HandleFunc("/graphs", handleGraph)
 	mux.HandleFunc("/obtain-carpetas-archivos", handleObtainCarpetasArchivos)
-
+	mux.HandleFunc("/cat", handleCat) //-------Nuevo
 	handler := c.Handler(mux)
 
 	fmt.Println("Backend server is on 8080")
@@ -276,6 +276,52 @@ func handleObtainCarpetasArchivos(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
 	err := json.NewEncoder(w).Encode(data)
+	if err != nil {
+		http.Error(w, "Error al leer el cuerpo de la solicitud", http.StatusBadRequest)
+		return
+	}
+}
+
+func handleCat(w http.ResponseWriter, r *http.Request) {
+	// /cat
+	if r.Method == http.MethodOptions {
+		// Establecer encabezados CORS para las solicitudes OPTIONS
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Access-Control-Allow-Methods", "POST")
+		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+		w.WriteHeader(http.StatusOK)
+		return
+	}
+
+	// Solo permitir solicitudes POST
+	if r.Method != http.MethodPost {
+		http.Error(w, "Método no permitido", http.StatusMethodNotAllowed)
+		return
+	}
+
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "POST")
+	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+
+	var requestBody struct {
+		Comando string `json:"comando"`
+	}
+	err := json.NewDecoder(r.Body).Decode(&requestBody)
+	if err != nil {
+		http.Error(w, "Error al leer el cuerpo de la solicitud", http.StatusBadRequest)
+		return
+	}
+
+	// fmt.Println(requestBody)
+	var ejecutar []string
+	ejecutar = append(ejecutar, requestBody.Comando)
+	if !comandos.GlobalCom(ejecutar) {
+		http.Error(w, "Error al leer el cuerpo de la solicitud", http.StatusBadRequest)
+		return
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	err = json.NewEncoder(w).Encode(requestBody.Comando)
 	if err != nil {
 		http.Error(w, "Error al leer el cuerpo de la solicitud", http.StatusBadRequest)
 		return
