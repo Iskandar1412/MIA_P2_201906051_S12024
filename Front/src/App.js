@@ -54,7 +54,7 @@ function App() {
 
           <div className='content-type'>
             <section id="contente1" className={`tabs-contentype ${selectedTab === 'contente1' && 'active'}`}>
-              <Pantalla1 info={obtainInfo} carpetas={obtainCarpetas} />
+              <Pantalla1 info={obtainInfo} carpetas={obtainCarpetas} cambiarDot={obtainDots} />
             </section>
             <section id="contente2" className={`tabs-contentype ${selectedTab === 'contente2' && 'active'}`}>
               <Pantalla2 command={command} carpetasOb={carpetas} carpetas={obtainCarpetas} />

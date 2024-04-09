@@ -1,12 +1,12 @@
 import React from 'react';
 import particion from '../../img/Partition.png';
 import axios from 'axios'
+import { pathbackend } from '../../path';
 
 function Partitions( props ) {
-    const path = "http://localhost:8080"
     const Carpetas = async () => {
         try {
-            const res = await axios.get(path+'/obtain-carpetas-archivos')
+            const res = await axios.get(pathbackend+'/obtain-carpetas-archivos')
             if (res.status === 200) {
                 const jsonData = JSON.parse(res.data.datos);
                 // console.log(jsonData)

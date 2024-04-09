@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import frame from '../../img/frame1.jpg'
 import axios from 'axios'
+import { pathbackend } from '../../path';
+
 
 function Login( props ) {
     const [password, setPassword] = useState("")
     const [user, setUser] = useState("");
-    const path = "http://localhost:8080"
 
     const enviarDirectorios = async () => {
         //se usará un fetch para obtener los directorios y archivos
         try {
-            const res = await axios.get(path+'/obtain-carpetas-archivos')
+            const res = await axios.get(pathbackend+'/obtain-carpetas-archivos')
             if (res.status === 200) {
                 const jsonData = JSON.parse(res.data.datos);
                 // console.log(jsonData)
@@ -24,7 +25,7 @@ function Login( props ) {
     const ingresarSecion = async (objeto) => {
         try { 
             console.log(objeto)
-            const res = await axios.post(path + "/login", objeto)
+            const res = await axios.post(pathbackend + "/login", objeto)
             if (res.status === 200) {
                 enviarDirectorios()
                 setUser("")

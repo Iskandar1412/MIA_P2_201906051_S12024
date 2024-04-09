@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import carpeta from '../../img/Carpeta1.png'
 import archivo from '../../img/File.png'
 import axios from 'axios'
+import { pathbackend } from "../../path";
+
 
 function Dashboard ( props ) {
     const [userDash, setUserDash] = useState("")
@@ -9,7 +11,6 @@ function Dashboard ( props ) {
     const [historial, setHistorial] = useState([]);
     const [contenidoArchivo, setContenidoArchivo] = useState("");
     const [data, setData] = useState([]);
-    const pathserver = "http://localhost:8080"
     
     
     useEffect(() => {
@@ -34,7 +35,7 @@ function Dashboard ( props ) {
         }
         
         try { 
-            const res = await axios.post(pathserver + "/logout", objeto)
+            const res = await axios.post(pathbackend + "/logout", objeto)
             console.log(res)
             if (res.status === 200) {
                 localStorage.removeItem('user')

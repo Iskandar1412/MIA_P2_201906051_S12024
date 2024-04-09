@@ -1,0 +1,1 @@
+export const pathbackend = "http://localhost:8080"

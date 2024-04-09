@@ -3,9 +3,9 @@ import filedot from '../img/dot.png'
 import filetxt from '../img/txt.png'
 import * as d3Graphviz from "d3-graphviz";
 import axios from "axios";
+import { pathbackend } from "../path";
 
 function Pantalla3({ dots, cambiarDot }) {
-    const path = "http://localhost:8080"
     const [grafica, setGrafica] = useState("");
 
     const obtainGraphs = (graph) => {
@@ -26,7 +26,7 @@ function Pantalla3({ dots, cambiarDot }) {
     useEffect(() => {
         const handleReports = async () => {
             try {
-                const res = await axios.get(path+'/reportesobtener')
+                const res = await axios.get(pathbackend+'/reportesobtener')
                 if (res.status === 200) {
                     const jsonData = JSON.parse(res.data.datos);
                     // console.log(jsonData)
@@ -45,7 +45,7 @@ function Pantalla3({ dots, cambiarDot }) {
         const valorBoton = event.target.getAttribute('data-value');
         //console.log("Valor del botón:", valorBoton);
         try {
-            const res = await axios.get(path + '/graphs', {
+            const res = await axios.get(pathbackend + '/graphs', {
                 params: {
                     id: valorBoton,
                 }
@@ -60,7 +60,7 @@ function Pantalla3({ dots, cambiarDot }) {
         const valorBoton = event.target.getAttribute('data-value');
         //console.log("Valor del botón:", valorBoton);
         try {
-            const res = await axios.get(path + '/graphs', {
+            const res = await axios.get(pathbackend + '/graphs', {
                 params: {
                     id: valorBoton
                 }

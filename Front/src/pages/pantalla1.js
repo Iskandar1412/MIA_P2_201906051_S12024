@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'
+import { pathbackend } from '../path';
 
 function getCommand(comm, ...commands) {
     comm = comm.toLowerCase();
@@ -12,10 +13,10 @@ function getCommand(comm, ...commands) {
 }
 
 
-function Pantalla1({ info, carpetas }) {
+function Pantalla1({ info, carpetas, cambiarDot }) {
     const [command, setCommand] = useState('');
     const [commandsSaved, setCommandSaved] = useState([]);
-    const path = "http://localhost:8080"
+    
 
     const HandleCommandChange = (event) => {
         setCommand(event.target.value);
@@ -30,7 +31,7 @@ function Pantalla1({ info, carpetas }) {
 
     const ObtenerInformacionMBR2 = async () => {
         try {
-            const res = await axios.get(path+"/obtainmbr")
+            const res = await axios.get(pathbackend+"/obtainmbr")
 
             if (res.status === 200) {
                 console.log(res.data.datos)
@@ -42,7 +43,7 @@ function Pantalla1({ info, carpetas }) {
 
     const EnviarInformacionCarpetas = async () => {
         try {
-            const res = await axios.get(path+'/obtain-carpetas-archivos')
+            const res = await axios.get(pathbackend+'/obtain-carpetas-archivos')
             if (res.status === 200) {
                 const jsonData = JSON.parse(res.data.datos);
                 // console.log(jsonData)
@@ -55,7 +56,7 @@ function Pantalla1({ info, carpetas }) {
     useEffect(() => {
         const ObtenerInformacionMBR = async () => {
             try {
-                const res = await axios.get(path+"/obtainmbr")
+                const res = await axios.get(pathbackend+"/obtainmbr")
 
                 if (res.status === 200) {
                     // console.log(res.data.datos)
@@ -70,9 +71,21 @@ function Pantalla1({ info, carpetas }) {
         };
     },  [])
 
+    const handleReports = async () => {
+        try {
+            const res = await axios.get(pathbackend+'/reportesobtener')
+            if (res.status === 200) {
+                const jsonData = JSON.parse(res.data.datos);
+                // console.log(jsonData)
+                cambiarDot(jsonData)
+                // console.log(jsonData)
+            }
+        } catch (e) { }
+    }
+
     const postInformacion = async (objeto) => {
         try {
-            const res = await axios.post(path+'/command', objeto);
+            const res = await axios.post(pathbackend+'/command', objeto);
             if (res.status === 200) {
                 ObtenerInformacionMBR2()
             }
@@ -81,9 +94,18 @@ function Pantalla1({ info, carpetas }) {
 
     const postContenido = async (objeto) => {
         try {
-            const res = await axios.post(path+'/command', objeto);
+            const res = await axios.post(pathbackend+'/command', objeto);
             if (res.status === 200) {
                 EnviarInformacionCarpetas()
+            }
+        } catch (e) { }
+    }
+
+    const postReportes = async (objeto) => {
+        try {
+            const res = await axios.post(pathbackend+'/command', objeto);
+            if (res.status === 200) {
+                handleReports()
             }
         } catch (e) { }
     }
@@ -117,6 +139,8 @@ function Pantalla1({ info, carpetas }) {
                 //actualizar reportes
                 //postear os grafos ---faltante
                 objeto.comando = command
+                postReportes(objeto)
+                handleReports()
                 setCommandSaved([...commandsSaved, command]);
                 setCommand('');
             } else if (["login", "logout"].includes(com4)){
