@@ -10,7 +10,7 @@ function Discos( props ) {
         
         for (let i = 0; i < props.command.length; i++) {
             if (props.command[i].Disco === valorBoton) {
-                // console.log(props.command[i])
+                console.log(props.command[i])
                 props.cambiarDiscos(props.command[i])
                 props.onSeleccionar('particiones')
                 

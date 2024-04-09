@@ -18,11 +18,13 @@ function Partitions( props ) {
 
     const handleClickButton = (event) => {
         const valorBoton = event.target.getAttribute('data-value');
+        // console.log(props.disco.Mbr_partitions)
         // console.log(props.disco.particiones.length)
+        // console.log(valorBoton)
         for (let i = 0; i  < props.disco.Mbr_partitions.length; i++){
-            //console.log(props.disco.particiones[i])
+            console.log(props.disco.Mbr_partitions[i])
             if (props.disco.Mbr_partitions[i].Particion === valorBoton) {
-                // console.log(props.disco.particiones[i])
+                console.log(props.disco.Mbr_partitions[i])
                 //verificar que sea ext2 o ext3
                 if (props.disco.Mbr_partitions[i].Type === 'E') {
                     alert("Disco Extendido no se puede usar")
@@ -42,18 +44,28 @@ function Partitions( props ) {
                 }
                 console.log(localStorage.getItem('user'))
                 var usuario_logeado = localStorage.getItem('user')
-                if (usuario_logeado !== null) {
+                if (usuario_logeado === null) {
                     props.seleccionParticion(props.disco.Mbr_partitions[i].Particion)
                     localStorage.setItem('id_particion', props.disco.Mbr_partitions[i].Id_mounted)
-                    Carpetas()
-                    props.onSeleccionar('dashboard')
+                    props.onSeleccionar('login')
                     break
+                } else {
+                    var id = localStorage.getItem('id_particion')
+                    console.log(id)
+                    if (props.disco.Mbr_partitions[i].Id_mounted === id) {
+                        props.seleccionParticion(props.disco.Mbr_partitions[i].Particion)
+                        localStorage.setItem('id_particion', props.disco.Mbr_partitions[i].Id_mounted)
+                        Carpetas()
+                        props.onSeleccionar('dashboard')
+                        break
+                    }
+                    else {
+                        alert("Debe cerrar secion")
+                        break
+                    }
                 }
-                props.seleccionParticion(props.disco.Mbr_partitions[i].Particion)
-                localStorage.setItem('id_particion', props.disco.Mbr_partitions[i].Id_mounted)
-                props.onSeleccionar('login')
-                break
             }
+            continue
         }
         // console.log("Valor del botón:", valorBoton);
         // console.log(props.disco)
