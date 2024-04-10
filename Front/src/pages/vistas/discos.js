@@ -24,7 +24,7 @@ function Discos( props ) {
         <>
             
             <div className="discos">
-                {props.command.map((item, index) => (
+                {props.command && props.command.map((item, index) => (
                     <button 
                         key={index}
                         className="buttonDisk"
