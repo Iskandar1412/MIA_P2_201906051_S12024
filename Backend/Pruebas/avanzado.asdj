@@ -23,8 +23,8 @@ mkfs -type=full -id=B151 -fs=3fs
 
 #EXT2------------------------------------------------
 #------------------------REPORTES 1----------------
-rep -id=A151 -path="MIA/P1/Reports/reporte1_sb.jpg" -name=sb
-rep -id=A151 -path="MIA/P1/Reports/reporte1_tree.jpg" -name=tree
+rep -id=A151 -path="Rep/reporte1_sb.jpg" -name=sb
+rep -id=A151 -path="Rep/reporte1_tree.jpg" -name=tree
 
 pause
 mkdisk -param=x #ERR
@@ -104,7 +104,7 @@ mkdir -r -path=/home/archivos/carpeta1/carpeta2/carpeta3/carpeta4
 mkdir -r -path=/home/archivos/carpeta1/carpeta2/carpeta3/carpeta4/carpeta5
 
 #------------------------REPORTE 2----------------
-rep -id=A151 -path=MIA/P1/Reports/reporte2_tree.jpg -name=tree
+rep -id=A151 -path=Rep/reporte2_tree.jpg -name=tree
 
 pause
 mkdisk -param=x #ERR
@@ -141,7 +141,7 @@ mkdisk -param=x #ERR
 
 
 #------------------------REPORTE 3----------------
-rep -id=A151 -path="MIA/P1/Reports/reporte3_tree.jpg" -name=tree
+rep -id=A151 -path="Rep/reporte3_tree.jpg" -name=tree
 
 pause
 mkdisk -param=x #ERR
@@ -151,7 +151,7 @@ remove -path=/home/archivos/users/docs/usac #Carpeta
 remove -path=/home/archivos/users/docs/Tarea.txt #Archivo
 
 #------------------------REPORTE 4----------------
-rep -id=A151 -path="MIA/P1/Reports/reporte4_tree.jpg" -name=tree
+rep -id=A151 -path="Rep/reporte4_tree.jpg" -name=tree
 
 pause
 mkdisk -param=x #ERR
@@ -160,15 +160,15 @@ mkdisk -param=x #ERR
 move -path=/home/archivos/users/docs/Tarea3.txt -dest=/home #archivo
 
 #------------------------REPORTES 5----------------
-rep -id=A151 -path="MIA/P1/Reports/reporte5_inode.jpg" -name=inode
-rep -id=A151 -path="MIA/P1/Reports/reporte5_block.pdf" -name=block
-rep -id=A151 -path="MIA/P1/Reports/reporte5_bm_inode.txt" -name=bm_inode
-rep -id=A151 -path="MIA/P1/Reports/reporte5_bm_block.txt" -name=bm_block
-rep -id=A151 -path="MIA/P1/Reports/reporte5_tree.jpg" -name=tree
-rep -id=A151 -path="MIA/P1/Reports/reporte5_sb.jpg" -name=sb
-rep -id=A151 -path="MIA/P1/Reports/reporte5_journaling.jpg" -name=journaling #ERR EXT2 NO TIENE JOURNAL
-rep -id=A151 -path="MIA/P1/Reports/reporte5_file.jpg" -ruta=/home/archivos/users/docs/Tarea2.txt  -name=file
-rep -id=A151 -path="MIA/P1/Reports/reporte5_ls.jpg" -ruta=/home/archivos/users/docs  -name=ls
+rep -id=A151 -path="Rep/reporte5_inode.jpg" -name=inode
+rep -id=A151 -path="Rep/reporte5_block.pdf" -name=block
+rep -id=A151 -path="Rep/reporte5_bm_inode.txt" -name=bm_inode
+rep -id=A151 -path="Rep/reporte5_bm_block.txt" -name=bm_block
+rep -id=A151 -path="Rep/reporte5_tree.jpg" -name=tree
+rep -id=A151 -path="Rep/reporte5_sb.jpg" -name=sb
+rep -id=A151 -path="Rep/reporte5_journaling.jpg" -name=journaling #ERR EXT2 NO TIENE JOURNAL
+rep -id=A151 -path="Rep/reporte5_file.jpg" -ruta=/home/archivos/users/docs/Tarea2.txt  -name=file
+rep -id=A151 -path="Rep/reporte5_ls.jpg" -ruta=/home/archivos/users/docs  -name=ls
 
 pause
 mkdisk -param=x #ERR
@@ -189,13 +189,13 @@ mkdir -r -path="/home/archivos/archivos 19/no/tiene/que/hacerla/por/permisos" #E
 cat -file1=/home/archivos/users/docs/Tarea2.txt #ERR NO TIENE PERMISOS DE LECTURA
 
 #------------------------REPORTES 6----------------
-rep -id=A151 -path="MIA/P1/Reports/reporte6_inode.jpg" -name=inode
-rep -id=A151 -path="MIA/P1/Reports/reporte6_block.pdf" -name=block
-rep -id=A151 -path="MIA/P1/Reports/reporte6_tree.jpg" -name=tree
-rep -id=A151 -path="MIA/P1/Reports/reporte6_bm_block.txt" -name=bm_block
-rep -id=A151 -path="MIA/P1/Reports/reporte6_bm_inode.txt" -name=bm_inode
-rep -id=A151 -path="MIA/P1/Reports/reporte6_sb.jpg" -name=sb
-rep -id=A151 -path="MIA/P1/Reports/reporte6_journaling.jpg" -name=journaling #ERR EXT2 NO TIENE JOURNAL
+rep -id=A151 -path="Rep/reporte6_inode.jpg" -name=inode
+rep -id=A151 -path="Rep/reporte6_block.pdf" -name=block
+rep -id=A151 -path="Rep/reporte6_tree.jpg" -name=tree
+rep -id=A151 -path="Rep/reporte6_bm_block.txt" -name=bm_block
+rep -id=A151 -path="Rep/reporte6_bm_inode.txt" -name=bm_inode
+rep -id=A151 -path="Rep/reporte6_sb.jpg" -name=sb
+rep -id=A151 -path="Rep/reporte6_journaling.jpg" -name=journaling #ERR EXT2 NO TIENE JOURNAL
 
 pause
 mkdisk -param=x #ERR
@@ -245,16 +245,16 @@ mkdir -path=/12-2
 
 
 #------------------------REPORTES 7----------------
-rep -id=B151 -path="MIA/P1/Reports/reporte7_tree.jpg" -name=tree
-rep -id=B151 -path="MIA/P1/Reports/reporte7_journaling.jpg" -name=journaling
+rep -id=B151 -path="Rep/reporte7_tree.jpg" -name=tree
+rep -id=B151 -path="Rep/reporte7_journaling.jpg" -name=journaling
 
 pause
 mkdisk -param=x #ERR
 
 #loss -id=B151
 #------------------------REPORTES 8----------------
-rep -id=B151 -path="MIA/P1/Reports/reporte8_tree.jpg" -name=tree
-rep -id=B151 -path="MIA/P1/Reports/reporte8_journaling.jpg" -name=journaling
+rep -id=B151 -path="Rep/reporte8_tree.jpg" -name=tree
+rep -id=B151 -path="Rep/reporte8_journaling.jpg" -name=journaling
 
 
 pause
@@ -263,8 +263,8 @@ mkdisk -param=x #ERR
 
 #recovery -id=B151
 #------------------------REPORTES 9----------------
-rep -id=B151 -path="MIA/P1/Reports/reporte9_tree.jpg" -name=tree
-rep -id=B151 -path="MIA/P1/Reports/reporte9_journaling.jpg" -name=journaling
+rep -id=B151 -path="Rep/reporte9_tree.jpg" -name=tree
+rep -id=B151 -path="Rep/reporte9_journaling.jpg" -name=journaling
 
 
 pause
@@ -281,7 +281,7 @@ mkusr -user="user1" -pass=abc -grp=usuarios
 chown -path=/1-2 -user=user1
 
 #------------------------REPORTES 10----------------
-rep -id=B151 -path="MIA/P1/Reports/reporte10_tree.jpg" -name=tree
+rep -id=B151 -path="Rep/reporte10_tree.jpg" -name=tree
 
 
 pause
@@ -303,7 +303,7 @@ mkdir -path=/Findirecto2
 rename -path=/1-2/F.txt -name=Gucci.txt
 
 #------------------------REPORTES 11 ---------------
-rep -id=B151 -path="MIA/P1/Reports/reporte11_tree.jpg" -name=tree
+rep -id=B151 -path="Rep/reporte11_tree.jpg" -name=tree
 
 #FIND------------------------------------------------
 find -path="/" -name=*

@@ -29,8 +29,8 @@ func tm() {
 	// obtencionpf.Retorno_MBR()
 	// obtencionpf.ObtenerReportes()
 	// obtencionpf.Retorno_Paths()
-	// obtencionpf.ObtenerDot("MIA/P1/Reports/reporte6_bm_inode.txt")
-	// obtencionpf.ObtenerDot("MIA/P1/Reports/reporte9_tree.dot")
+	// obtencionpf.ObtenerDot("Rep/reporte6_bm_inode.txt")
+	// obtencionpf.ObtenerDot("Rep/reporte9_tree.dot")
 	for {
 		// execute - path = Pruebas / avanzado.asdj
 		// input := "execute -path=Pruebas/prueba.adsj"

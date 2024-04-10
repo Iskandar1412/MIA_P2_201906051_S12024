@@ -71,18 +71,18 @@ mkfs -id=A451 -fs=3fs
 pause
 login -user=root -pass=123 -id=A351
 #cat -file1=/users.txt
-rep -id=A351 -path=MIA/P1/Reports/A351mbr_prueba1.jpg -name=mbr
-rep -id=A351 -path=MIA/P1/Reports/A351disk_prueba1.jpg -name=disk
-rep -id=A351 -path=MIA/P1/Reports/A351sb_prueba1.jpg -name=sb
-rep -id=A351 -path=MIA/P1/Reports/A351inodo_prueba1.jpg -name=inode
-rep -id=A351 -path=MIA/P1/Reports/A351bm_inode_prueba1.txt -name=bm_inode
-rep -id=A351 -path=MIA/P1/Reports/A351bm_block_prueba1.txt -name=bm_block
-rep -id=A351 -path=MIA/P1/Reports/A351file_prueba1.txt -ruta=/users.txt -name=file
-rep -id=A351 -path=MIA/P1/Reports/A351ls_prueba1.jpg -ruta=/ -name=ls
-rep -id=A351 -path=MIA/P1/Reports/A351journal_prueba1.jpg -name=journaling
-rep -id=A251 -path=MIA/P1/Reports/A251journal_prueba1.jpg -name=journaling
-rep -id=A251 -path=MIA/P1/Reports/A251block_prueba1.jpg -name=block
-rep -id=A251 -path=MIA/P1/Reports/A251tree_prueba1.jpg -name=tree
+rep -id=A351 -path=Rep/A351mbr_prueba1.jpg -name=mbr
+rep -id=A351 -path=Rep/A351disk_prueba1.jpg -name=disk
+rep -id=A351 -path=Rep/A351sb_prueba1.jpg -name=sb
+rep -id=A351 -path=Rep/A351inodo_prueba1.jpg -name=inode
+rep -id=A351 -path=Rep/A351bm_inode_prueba1.txt -name=bm_inode
+rep -id=A351 -path=Rep/A351bm_block_prueba1.txt -name=bm_block
+rep -id=A351 -path=Rep/A351file_prueba1.txt -ruta=/users.txt -name=file
+rep -id=A351 -path=Rep/A351ls_prueba1.jpg -ruta=/ -name=ls
+rep -id=A351 -path=Rep/A351journal_prueba1.jpg -name=journaling
+rep -id=A251 -path=Rep/A251journal_prueba1.jpg -name=journaling
+rep -id=A251 -path=Rep/A251block_prueba1.jpg -name=block
+rep -id=A251 -path=Rep/A251tree_prueba1.jpg -name=tree
 logout
 
 
@@ -99,8 +99,8 @@ mkgrp -name=grupo7
 mkgrp -name=grupo8
 mkgrp -name=grupo9
 mkgrp -name=grupo10
-rep -id=A251 -path=MIA/P1/Reports/A251sb_prueba2.jpg -name=sb
-rep -id=A251 -path=MIA/P1/Reports/A251tree_prueba2.jpg -name=tree
+rep -id=A251 -path=Rep/A251sb_prueba2.jpg -name=sb
+rep -id=A251 -path=Rep/A251tree_prueba2.jpg -name=tree
 rmgrp -name=grupo6
 #cat -file1=/users.txt
 #pause
@@ -133,9 +133,9 @@ mkfile -path=/home/archivo2.txt -size=16
 mkdir -path=/mnt
 cat -file1=/bin/archivo.txt
 mkdir -path=/opt
-rep -id=A251 -path=MIA/P1/Reports/tree_prueba3.jpg -name=tree
-rep -id=A251 -path=MIA/P1/Reports/block_prueba2.jpg -name=block
-rep -id=A251 -path=MIA/P1/Reports/A251file_prueba1.txt -ruta=/users.txt -name=file
+rep -id=A251 -path=Rep/tree_prueba3.jpg -name=tree
+rep -id=A251 -path=Rep/block_prueba2.jpg -name=block
+rep -id=A251 -path=Rep/A251file_prueba1.txt -ruta=/users.txt -name=file
 mkfile -path=/bin/archivo3.txt -size=16
 chmod -path=/opt -ugo=777
 chown -path=/bin -user=iskandar
@@ -153,12 +153,12 @@ chown -path=/loquesea -user=aika -r
 cat -file=/users.txt
 pause
 #mkfile -size=15 -path=/asdf -r
-rep -id=A251 -path=MIA/P1/Reports/tree_prueba4.jpg -name=tree
-rep -id=A251 -path=MIA/P1/Reports/A251sb_prueba3.jpg -name=sb
+rep -id=A251 -path=Rep/tree_prueba4.jpg -name=tree
+rep -id=A251 -path=Rep/A251sb_prueba3.jpg -name=sb
 
 remove -path=/home/archivo2.txt
 
-rep -id=A251 -path=MIA/P1/Reports/A251journal_prueba4.jpg -name=journaling
+rep -id=A251 -path=Rep/A251journal_prueba4.jpg -name=journaling
 #-------------
 
 

@@ -4,24 +4,24 @@ digraph G{
 		<tr><td colspan="2" bgcolor="#6308d8"><font color="white">REPORTE DE MBR</font></td></tr>
 		<tr>
 			<td>mbr_tamano</td>
-			<td>20971520</td>
+			<td>52428800</td>
 		</tr>
 		<tr>
 			<td bgcolor="#b48be8">mbr_fecha_creacion</td>
-			<td bgcolor="#b48be8">2024/04/09 (18:27:44)</td>
+			<td bgcolor="#b48be8">2024/04/09 (19:31:08)</td>
 		</tr>
 		<tr>
 			<td>mbr_disk_signature</td>
-			<td>803022</td>
+			<td>169468</td>
 		</tr>
 		<tr><td colspan="2" bgcolor="#6308d8"><font color="white">Particion</font></td></tr>
 		<tr>
 			<td>part_status</td>
-			<td>-1</td>
+			<td>0</td>
 		</tr>
 		<tr>
 			<td brcolor="#b48be8">part_type</td>
-			<td brcolor="#b48be8">E</td>
+			<td brcolor="#b48be8">P</td>
 		</tr>
 		<tr>
 			<td>part_fit</td>
@@ -33,15 +33,15 @@ digraph G{
 		</tr>
 		<tr>
 			<td>part_size</td>
-			<td>3145728</td>
+			<td>15728640</td>
 		</tr>
 		<tr>
 			<td brcolor="#b48be8">part_name</td>
-			<td brcolor="#b48be8">particion1</td>
+			<td brcolor="#b48be8">part</td>
 		</tr>
 		<tr>
 			<td>part_id</td>
-			<td></td>
+			<td>A151</td>
 		</tr>
 		<tr>
 			<td brcolor="#b48be8">part_correlative</td>
@@ -50,7 +50,7 @@ digraph G{
 		<tr><td colspan="2" bgcolor="#6308d8"><font color="white">Particion</font></td></tr>
 		<tr>
 			<td>part_status</td>
-			<td>1</td>
+			<td>-1</td>
 		</tr>
 		<tr>
 			<td brcolor="#b48be8">part_type</td>
@@ -58,32 +58,32 @@ digraph G{
 		</tr>
 		<tr>
 			<td>part_fit</td>
-			<td>W</td>
+			<td>F</td>
 		</tr>
 		<tr>
 			<td brcolor="#b48be8">part_start</td>
-			<td brcolor="#b48be8">3145881</td>
+			<td brcolor="#b48be8">-1</td>
 		</tr>
 		<tr>
 			<td>part_size</td>
-			<td>3145728</td>
+			<td>-1</td>
 		</tr>
 		<tr>
 			<td brcolor="#b48be8">part_name</td>
-			<td brcolor="#b48be8">particion2</td>
+			<td brcolor="#b48be8"></td>
 		</tr>
 		<tr>
 			<td>part_id</td>
-			<td>A151</td>
+			<td></td>
 		</tr>
 		<tr>
 			<td brcolor="#b48be8">part_correlative</td>
-			<td brcolor="#b48be8">2</td>
+			<td brcolor="#b48be8">-1</td>
 		</tr>
 		<tr><td colspan="2" bgcolor="#6308d8"><font color="white">Particion</font></td></tr>
 		<tr>
 			<td>part_status</td>
-			<td>1</td>
+			<td>-1</td>
 		</tr>
 		<tr>
 			<td brcolor="#b48be8">part_type</td>
@@ -91,27 +91,27 @@ digraph G{
 		</tr>
 		<tr>
 			<td>part_fit</td>
-			<td>W</td>
+			<td>F</td>
 		</tr>
 		<tr>
 			<td brcolor="#b48be8">part_start</td>
-			<td brcolor="#b48be8">6291609</td>
+			<td brcolor="#b48be8">-1</td>
 		</tr>
 		<tr>
 			<td>part_size</td>
-			<td>3145728</td>
+			<td>-1</td>
 		</tr>
 		<tr>
 			<td brcolor="#b48be8">part_name</td>
-			<td brcolor="#b48be8">particion3</td>
+			<td brcolor="#b48be8"></td>
 		</tr>
 		<tr>
 			<td>part_id</td>
-			<td>A251</td>
+			<td></td>
 		</tr>
 		<tr>
 			<td brcolor="#b48be8">part_correlative</td>
-			<td brcolor="#b48be8">3</td>
+			<td brcolor="#b48be8">-1</td>
 		</tr>
 		<tr><td colspan="2" bgcolor="#6308d8"><font color="white">Particion</font></td></tr>
 		<tr>

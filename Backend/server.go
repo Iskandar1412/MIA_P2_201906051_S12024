@@ -211,7 +211,7 @@ func handleGraph(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	path := "MIA/P1/Reports/" + id
+	path := "Rep/" + id
 	dot_Obtenido := obtencionpf.ObtenerDot(path)
 	if dot_Obtenido == "" {
 		http.Error(w, "Error al leer el cuerpo de la solicitud", http.StatusBadRequest)

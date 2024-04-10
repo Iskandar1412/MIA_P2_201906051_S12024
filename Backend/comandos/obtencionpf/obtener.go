@@ -60,7 +60,7 @@ func MostrarParticionesMontadas() {
 }
 
 func ObtenerReportes() ([]byte, error) {
-	path := "MIA/P1/Reports/"
+	path := "Rep"
 
 	isEmpty, err := isDirEmpty(path)
 	if err != nil {

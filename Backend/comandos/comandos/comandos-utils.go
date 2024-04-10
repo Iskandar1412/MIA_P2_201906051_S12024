@@ -29,10 +29,10 @@ func ObtenerComandos(x string) []string {
 
 func CrearCarpeta() {
 	nombre := "MIA/P1"
-	reportes := "MIA/P1/Reports"
+	reportes := "Rep"
 	discos := "MIA/P1/Disks"
 	nombreArchivo := "MIA/CarpetaImagenes.txt"
-	// git1 := "MIA/P1/Reports/.gitignore"
+	// git1 := "Rep/.gitignore"
 	// git2 := "MIA/P1/Disks/.gitignore"
 	if _, err := os.Stat(nombre); os.IsNotExist(err) {
 		err := os.MkdirAll(nombre, 0777)
@@ -52,9 +52,9 @@ func CrearCarpeta() {
 			color.Red("Error al crear carpeta", err)
 			return
 		}
-		color.Green("\t\t\t\t\tCarpeta MIA/P1/Reports creada correctamente")
+		color.Green("\t\t\t\t\tCarpeta Rep creada correctamente")
 	} else {
-		color.Yellow("\t\t\t\t\tCarpeta MIA/P1/Reports ya existente")
+		color.Yellow("\t\t\t\t\tCarpeta Rep ya existente")
 	}
 
 	if _, err := os.Stat(discos); os.IsNotExist(err) {
