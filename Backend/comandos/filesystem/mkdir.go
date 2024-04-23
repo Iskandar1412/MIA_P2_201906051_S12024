@@ -89,38 +89,38 @@ func MKDIR_EXECUTE(path string, r bool) {
 	posInodoI := utils.Sb_System.S_inode_start
 	var existP bool = true
 	if len(rutaS) > 1 {
-		for i := range rutaS {
+		for i := 0; i < (len(rutaS) - 1); i++ {
 			if existP {
 				aux := posInodoI
 				posInodoI = utils.ExistPathSystem(rutaS, int32(i), posInodoI, nodo.Path)
 				if posInodoI == aux {
 					existP = false
 				}
-				if !existP {
-					if r {
-						posInodoI = utils.CrearCarpetaSystem(rutaS, int32(i), posInodoI, nodo.Path)
-						if nodo.Es_Particion_P {
-							if _, err := file.Seek(int64(nodo.Particion_P.Part_start), 0); err != nil {
-								color.Red("[MKDIR]: Error en mover puntero")
-								return
-							}
-						} else if nodo.Es_Particion_L {
-							if _, err := file.Seek(int64(nodo.Particion_L.Part_start+size.SizeEBR()), 0); err != nil {
-								color.Red("[MKDIR]: Error en mover puntero")
-								return
-							}
-						}
-						if err := binary.Write(file, binary.LittleEndian, &utils.Sb_System); err != nil {
-							color.Red("[MKDIR]: Error en la escritura del archivo")
+			}
+			if !existP {
+				if r {
+					posInodoI = utils.CrearCarpetaSystem(rutaS, int32(i), posInodoI, nodo.Path)
+					if nodo.Es_Particion_P {
+						if _, err := file.Seek(int64(nodo.Particion_P.Part_start), 0); err != nil {
+							color.Red("[MKDIR]: Error en mover puntero")
 							return
 						}
-						if posInodoI == -1 {
+					} else if nodo.Es_Particion_L {
+						if _, err := file.Seek(int64(nodo.Particion_L.Part_start+size.SizeEBR()), 0); err != nil {
+							color.Red("[MKDIR]: Error en mover puntero")
 							return
 						}
-					} else {
-						color.Red("[MKDIR]: no se puede crear el archivo")
+					}
+					if err := binary.Write(file, binary.LittleEndian, &utils.Sb_System); err != nil {
+						color.Red("[MKDIR]: Error en la escritura del archivo")
 						return
 					}
+					if posInodoI == -1 {
+						return
+					}
+				} else {
+					color.Red("[MKDIR]: no se puede crear la carpeta: " + rutaS[i])
+					return
 				}
 			}
 		}

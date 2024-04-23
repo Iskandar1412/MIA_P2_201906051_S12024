@@ -1,0 +1,12 @@
+digraph G{
+	node[shape=none];
+	start[label=<<table border="1" cellspacing="0" cellpadding="5" color="#000">
+		<tr>
+			<td rowspan="3" bgcolor="#000"><font color="white"><b>MBR</b></font></td>
+			<td rowspan="3" width="300" bgcolor="#74719B"><b>Primaria Part26</b><br/>28.57% del disco</td>
+			<td rowspan="3" width="300" bgcolor="#74719B"><b>Primaria Part27</b><br/>28.57% del disco</td>
+			<td rowspan="3" width="300" bgcolor="#74719B"><b>Primaria Part28</b><br/>7.14% del disco</td>
+			<td rowspan="3" bgcolor="#CCCCCC"><b>Libre</b><br/>35.71% del disco</td>
+		</tr>
+	</table>>];
+}

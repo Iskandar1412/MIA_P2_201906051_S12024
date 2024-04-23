@@ -4,9 +4,6 @@ package main
 //go mod tidy
 
 import (
-	"bufio"
-	"fmt"
-	"os"
 	"proyecto/comandos/comandos"
 	"proyecto/comandos/obtencionpf"
 
@@ -22,6 +19,7 @@ import (
 // execute -path=/home/iskandar/Escritorio/prueba.asdj
 // execute -path=/home/iskandar/Escritorio/Proyectos/Git/MIA_1S2024_201906051/Proyectos/MIA_P1_201906051/Pruebas/prueba.adsj
 // execute -path=Pruebas/prueba.adsj
+// execute -path=Pruebas/Proyecto2/prueba.asdj
 func main() {
 	color.Blue("PROY1 - 201906051 - Juan Urbina")
 	comandos.CrearCarpeta()
@@ -37,9 +35,10 @@ func main() {
 		// input := "execute -path=Pruebas/prueba.adsj"
 		// input := "execute -path=Pruebas/basico.asdj"
 		// input := "execute -path=Pruebas/avanzado.asdj"
-		reader := bufio.NewReader(os.Stdin)
-		fmt.Print("Ingresar comando EXECUTE (exit para salir): >")
-		input, _ := reader.ReadString('\n')
+		input := "execute -path=Pruebas/Proyecto2/prueba.asdj"
+		// reader := bufio.NewReader(os.Stdin)
+		// fmt.Print("Ingresar comando EXECUTE (exit para salir): >")
+		// input, _ := reader.ReadString('\n')
 		input = strings.TrimSpace(input)
 
 		if strings.ToLower(input) == "exit" {

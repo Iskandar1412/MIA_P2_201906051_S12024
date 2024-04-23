@@ -35,7 +35,8 @@ func GlobalCom(lista []string) bool {
 		} else if strings.HasPrefix(strings.ToLower(comm), "cat") { // solo para cat
 			comandos := ObtenerComandos(comm)
 			command := getCommand(strings.ToLower(comm), "cat")
-			return filesystem.FilesCommandProps(strings.ToUpper(command), comandos)
+			filesystem.FilesCommandProps(strings.ToUpper(command), comandos)
+			// return filesystem.FilesCommandProps(strings.ToUpper(command), comandos)
 
 		} else if (strings.HasPrefix(strings.ToLower(comm), "chown")) || (strings.HasPrefix(strings.ToLower(comm), "chgrp")) || (strings.HasPrefix(strings.ToLower(comm), "chmod")) {
 			comandos := ObtenerComandos(comm)
@@ -45,7 +46,8 @@ func GlobalCom(lista []string) bool {
 		} else if (strings.HasPrefix(strings.ToLower(comm), "login")) || (strings.HasPrefix(strings.ToLower(comm), "logout")) {
 			comandos := ObtenerComandos(comm)
 			command := getCommand(strings.ToLower(comm), "login", "logout")
-			return adminusers.UserCommandProps(strings.ToUpper(command), comandos)
+			adminusers.UserCommandProps(strings.ToUpper(command), comandos)
+			// return adminusers.UserCommandProps(strings.ToUpper(command), comandos)
 			// Grupo
 		} else if (strings.HasPrefix(strings.ToLower(comm), "mkgrp")) || (strings.HasPrefix(strings.ToLower(comm), "rmgrp")) || (strings.HasPrefix(strings.ToLower(comm), "mkusr")) || (strings.HasPrefix(strings.ToLower(comm), "rmusr")) || (strings.HasPrefix(strings.ToLower(comm), "mkgrp")) {
 			comandos := ObtenerComandos(comm)
