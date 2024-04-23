@@ -63,7 +63,7 @@ func Report_Journal(name string, path string, ruta string, id_disco string) {
 	}
 
 	nombre_sin_extension := strings.Split(name, ".")
-	rutaB := path + "/" + nombre_sin_extension[0] + ".dot"
+	rutaB := "Rep/" + nombre_sin_extension[0] + ".dot"
 	dot, err := os.Create(rutaB)
 	if err != nil {
 		color.Red("Error al crear el archivo <" + name + ">")
@@ -128,7 +128,7 @@ func Report_Journal(name string, path string, ruta string, id_disco string) {
 	//-------------
 	dot.Close()
 	// Generacion del reporte
-	// imagePath := path + "/" + name
+	// imagePath := "Rep/" + name
 
 	// cmd := exec.Command("/usr/bin/dot", "-T"+nombre_sin_extension[1], rutaB, "-o", imagePath)
 	// err = cmd.Run()

@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"os"
 	"proyecto/comandos/comandos"
+	"proyecto/comandos/obtencionpf"
 
 	"strings"
 
@@ -21,11 +22,11 @@ import (
 // execute -path=/home/iskandar/Escritorio/prueba.asdj
 // execute -path=/home/iskandar/Escritorio/Proyectos/Git/MIA_1S2024_201906051/Proyectos/MIA_P1_201906051/Pruebas/prueba.adsj
 // execute -path=Pruebas/prueba.adsj
-func tm() {
+func main() {
 	color.Blue("PROY1 - 201906051 - Juan Urbina")
 	comandos.CrearCarpeta()
-	// obtencionpf.ObtenerMBR_Mounted()
-	// obtencionpf.MostrarParticionesMontadas()
+	obtencionpf.ObtenerMBR_Mounted()
+	obtencionpf.MostrarParticionesMontadas()
 	// obtencionpf.Retorno_MBR()
 	// obtencionpf.ObtenerReportes()
 	// obtencionpf.Retorno_Paths()

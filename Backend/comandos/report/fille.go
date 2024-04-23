@@ -87,7 +87,7 @@ func Report_FILE(name string, path string, ruta string, id_disco string) {
 	nombre_sin_extension := strings.Split(name, ".")
 	_, esimagen := utils.EsImagen(strings.ToLower(nombre_sin_extension[1]), "jpg", "png", "svg")
 	if esimagen { //Caso de ser jpg/png/svg
-		rutaB := path + "/" + nombre_sin_extension[0] + ".dot"
+		rutaB := "Rep/" + nombre_sin_extension[0] + ".dot"
 		dot, err := os.Create(rutaB)
 		if err != nil {
 			color.Red("Error al crear el archivo <" + name + ">")
@@ -110,7 +110,7 @@ func Report_FILE(name string, path string, ruta string, id_disco string) {
 		dot.Close()
 
 		// Generacion del reporte
-		// imagePath := path + "/" + name
+		// imagePath := "Rep/" + name
 
 		// cmd := exec.Command("/usr/bin/dot", "-T"+nombre_sin_extension[1], rutaB, "-o", imagePath)
 		// err = cmd.Run()
@@ -119,7 +119,7 @@ func Report_FILE(name string, path string, ruta string, id_disco string) {
 		// return
 		// }
 	} else { //caso de ser un archivo x
-		rutaB := path + "/" + nombre_sin_extension[0] + "." + nombre_sin_extension[1]
+		rutaB := "Rep/" + nombre_sin_extension[0] + "." + nombre_sin_extension[1]
 		dot, err := os.Create(rutaB)
 		if err != nil {
 			color.Red("Error al crear el archivo <" + name + ">")

@@ -75,7 +75,7 @@ func REP_EXECUTE(_name string, _path string, _id string, _ruta string) {
 	ruta_separada := strings.Split(_path, "/")
 	cantidad_carpetas := len(ruta_separada)
 	nombre_archivo := ruta_separada[cantidad_carpetas-1]
-	ruta_sin_archivo := strings.ReplaceAll(_path, "/"+nombre_archivo, "")
+	ruta_sin_archivo := "Rep"
 
 	if _, ecarpeta := os.Stat(ruta_sin_archivo); os.IsNotExist(ecarpeta) {
 		err := os.MkdirAll(ruta_sin_archivo, 0777)
