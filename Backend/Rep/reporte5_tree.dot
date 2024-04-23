@@ -1,0 +1,3484 @@
+digraph G {
+	rankdir=LR;
+	node[shape=none];
+	n145853[label=<<table>
+		<tr>
+			<td bgcolor="#376ef3" colspan="2">Inodo  145853</td>
+		</tr>
+		<tr>
+			<td>i_uid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_gid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_s</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_atime</td>
+			<td>2024/04/23 (16:41:48)</td>
+		</tr>
+		<tr>
+			<td>i_ctime</td>
+			<td>2024/04/23 (16:41:48)</td>
+		</tr>
+		<tr>
+			<td>i_mtime</td>
+			<td>2024/04/23 (16:41:48)</td>
+		</tr>
+		<tr>
+			<td>i_block 0</td>
+			<td port="3349757">3349757</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_type</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_perm</td>
+			<td>664</td>
+		</tr>
+	</table>>];
+
+	n3349757[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 3349757</td>
+		</tr>
+		<tr>
+			<td>.</td>
+			<td port="145853">145853</td>
+		</tr>
+		<tr>
+			<td>..</td>
+			<td port="145853">145853</td>
+		</tr>
+		<tr>
+			<td>users.txt</td>
+			<td port="145945">145945</td>
+		</tr>
+		<tr>
+			<td>calificacion</td>
+			<td port="146037">146037</td>
+		</tr>
+	</table>>];
+n3349757:145945->n145945;
+n3349757:146037->n146037;
+
+n145853:3349757->n3349757;
+
+	n145945[label=<<table>
+		<tr>
+			<td bgcolor="#376ef3" colspan="2">Inodo  145945</td>
+		</tr>
+		<tr>
+			<td>i_uid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_gid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_s</td>
+			<td>27</td>
+		</tr>
+		<tr>
+			<td>i_atime</td>
+			<td>2024/04/23 (16:41:48)</td>
+		</tr>
+		<tr>
+			<td>i_ctime</td>
+			<td>2024/04/23 (16:41:48)</td>
+		</tr>
+		<tr>
+			<td>i_mtime</td>
+			<td>2024/04/23 (16:41:48)</td>
+		</tr>
+		<tr>
+			<td>i_block 0</td>
+			<td port="3349821">3349821</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_type</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_perm</td>
+			<td>700</td>
+		</tr>
+	</table>>];
+
+	n3349821[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>1,G,root<br/>1,U,root,root,123<br/></td>
+		</tr>
+	</table>>];
+
+n145945:3349821->n3349821;
+
+	n146037[label=<<table>
+		<tr>
+			<td bgcolor="#376ef3" colspan="2">Inodo  146037</td>
+		</tr>
+		<tr>
+			<td>i_uid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_gid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_s</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_atime</td>
+			<td>2024/04/23 (16:42:11)</td>
+		</tr>
+		<tr>
+			<td>i_ctime</td>
+			<td>2024/04/23 (16:42:11)</td>
+		</tr>
+		<tr>
+			<td>i_mtime</td>
+			<td>2024/04/23 (16:42:11)</td>
+		</tr>
+		<tr>
+			<td>i_block 0</td>
+			<td port="3349885">3349885</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_type</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_perm</td>
+			<td>664</td>
+		</tr>
+	</table>>];
+
+	n3349885[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 3349885</td>
+		</tr>
+		<tr>
+			<td>.</td>
+			<td port="146037">146037</td>
+		</tr>
+		<tr>
+			<td>..</td>
+			<td port="145853">145853</td>
+		</tr>
+		<tr>
+			<td>U 2024</td>
+			<td port="146129">146129</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="-1">-1</td>
+		</tr>
+	</table>>];
+n3349885:146129->n146129;
+
+n146037:3349885->n3349885;
+
+	n146129[label=<<table>
+		<tr>
+			<td bgcolor="#376ef3" colspan="2">Inodo  146129</td>
+		</tr>
+		<tr>
+			<td>i_uid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_gid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_s</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_atime</td>
+			<td>2024/04/23 (16:42:11)</td>
+		</tr>
+		<tr>
+			<td>i_ctime</td>
+			<td>2024/04/23 (16:42:11)</td>
+		</tr>
+		<tr>
+			<td>i_mtime</td>
+			<td>2024/04/23 (16:42:11)</td>
+		</tr>
+		<tr>
+			<td>i_block 0</td>
+			<td port="3349949">3349949</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_type</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_perm</td>
+			<td>664</td>
+		</tr>
+	</table>>];
+
+	n3349949[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 3349949</td>
+		</tr>
+		<tr>
+			<td>.</td>
+			<td port="146129">146129</td>
+		</tr>
+		<tr>
+			<td>..</td>
+			<td port="146037">146037</td>
+		</tr>
+		<tr>
+			<td>9no Semestre</td>
+			<td port="146221">146221</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="-1">-1</td>
+		</tr>
+	</table>>];
+n3349949:146221->n146221;
+
+n146129:3349949->n3349949;
+
+	n146221[label=<<table>
+		<tr>
+			<td bgcolor="#376ef3" colspan="2">Inodo  146221</td>
+		</tr>
+		<tr>
+			<td>i_uid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_gid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_s</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_atime</td>
+			<td>2024/04/23 (16:42:11)</td>
+		</tr>
+		<tr>
+			<td>i_ctime</td>
+			<td>2024/04/23 (16:42:11)</td>
+		</tr>
+		<tr>
+			<td>i_mtime</td>
+			<td>2024/04/23 (16:42:11)</td>
+		</tr>
+		<tr>
+			<td>i_block 0</td>
+			<td port="3350013">3350013</td>
+		</tr>
+		<tr>
+			<td>i_block 1</td>
+			<td port="3350397">3350397</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_type</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_perm</td>
+			<td>664</td>
+		</tr>
+	</table>>];
+
+	n3350013[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 3350013</td>
+		</tr>
+		<tr>
+			<td>.</td>
+			<td port="146221">146221</td>
+		</tr>
+		<tr>
+			<td>..</td>
+			<td port="146129">146129</td>
+		</tr>
+		<tr>
+			<td>Gerenciales2</td>
+			<td port="146313">146313</td>
+		</tr>
+		<tr>
+			<td>Gerenciales</td>
+			<td port="146589">146589</td>
+		</tr>
+	</table>>];
+n3350013:146313->n146313;
+n3350013:146589->n146589;
+
+n146221:3350013->n3350013;
+
+	n3350397[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 3350397</td>
+		</tr>
+		<tr>
+			<td>Gerenciales3</td>
+			<td port="146681">146681</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="-1">-1</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="-1">-1</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="-1">-1</td>
+		</tr>
+	</table>>];
+n3350397:146681->n146681;
+
+n146221:3350397->n3350397;
+
+	n146313[label=<<table>
+		<tr>
+			<td bgcolor="#376ef3" colspan="2">Inodo  146313</td>
+		</tr>
+		<tr>
+			<td>i_uid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_gid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_s</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_atime</td>
+			<td>2024/04/23 (16:43:13)</td>
+		</tr>
+		<tr>
+			<td>i_ctime</td>
+			<td>2024/04/23 (16:43:13)</td>
+		</tr>
+		<tr>
+			<td>i_mtime</td>
+			<td>2024/04/23 (16:43:13)</td>
+		</tr>
+		<tr>
+			<td>i_block 0</td>
+			<td port="3350077">3350077</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_type</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_perm</td>
+			<td>664</td>
+		</tr>
+	</table>>];
+
+	n3350077[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 3350077</td>
+		</tr>
+		<tr>
+			<td>.</td>
+			<td port="146313">146313</td>
+		</tr>
+		<tr>
+			<td>..</td>
+			<td port="146221">146221</td>
+		</tr>
+		<tr>
+			<td>lab.txt</td>
+			<td port="146405">146405</td>
+		</tr>
+		<tr>
+			<td>magistral.tx</td>
+			<td port="146497">146497</td>
+		</tr>
+	</table>>];
+n3350077:146405->n146405;
+n3350077:146497->n146497;
+
+n146313:3350077->n3350077;
+
+	n146405[label=<<table>
+		<tr>
+			<td bgcolor="#376ef3" colspan="2">Inodo  146405</td>
+		</tr>
+		<tr>
+			<td>i_uid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_gid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_s</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td>i_atime</td>
+			<td>2024/04/23 (16:44:56)</td>
+		</tr>
+		<tr>
+			<td>i_ctime</td>
+			<td>2024/04/23 (16:43:19)</td>
+		</tr>
+		<tr>
+			<td>i_mtime</td>
+			<td>2024/04/23 (16:43:19)</td>
+		</tr>
+		<tr>
+			<td>i_block 0</td>
+			<td port="384">384</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_type</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_perm</td>
+			<td>664</td>
+		</tr>
+	</table>>];
+
+	n384[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>01234</td>
+		</tr>
+	</table>>];
+
+n146405:384->n384;
+
+	n146497[label=<<table>
+		<tr>
+			<td bgcolor="#376ef3" colspan="2">Inodo  146497</td>
+		</tr>
+		<tr>
+			<td>i_uid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_gid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_s</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td>i_atime</td>
+			<td>2024/04/23 (16:44:53)</td>
+		</tr>
+		<tr>
+			<td>i_ctime</td>
+			<td>2024/04/23 (16:43:24)</td>
+		</tr>
+		<tr>
+			<td>i_mtime</td>
+			<td>2024/04/23 (16:43:24)</td>
+		</tr>
+		<tr>
+			<td>i_block 0</td>
+			<td port="448">448</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_type</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_perm</td>
+			<td>664</td>
+		</tr>
+	</table>>];
+
+	n448[label=<<table>
+		<tr>
+			<td bgcolor="#c3f8b6">Bloque Archivo</td>
+		</tr>
+		<tr>
+			<td>01234</td>
+		</tr>
+	</table>>];
+
+n146497:448->n448;
+
+	n146589[label=<<table>
+		<tr>
+			<td bgcolor="#376ef3" colspan="2">Inodo  146589</td>
+		</tr>
+		<tr>
+			<td>i_uid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_gid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_s</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_atime</td>
+			<td>2024/04/23 (16:47:22)</td>
+		</tr>
+		<tr>
+			<td>i_ctime</td>
+			<td>2024/04/23 (16:47:22)</td>
+		</tr>
+		<tr>
+			<td>i_mtime</td>
+			<td>2024/04/23 (16:47:22)</td>
+		</tr>
+		<tr>
+			<td>i_block 0</td>
+			<td port="3350269">3350269</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_type</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_perm</td>
+			<td>664</td>
+		</tr>
+	</table>>];
+
+	n3350269[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 3350269</td>
+		</tr>
+		<tr>
+			<td>.</td>
+			<td port="146589">146589</td>
+		</tr>
+		<tr>
+			<td>..</td>
+			<td port="146221">146221</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="-1">-1</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="-1">-1</td>
+		</tr>
+	</table>>];
+
+n146589:3350269->n3350269;
+
+	n146681[label=<<table>
+		<tr>
+			<td bgcolor="#376ef3" colspan="2">Inodo  146681</td>
+		</tr>
+		<tr>
+			<td>i_uid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_gid</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>i_s</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_atime</td>
+			<td>2024/04/23 (16:47:40)</td>
+		</tr>
+		<tr>
+			<td>i_ctime</td>
+			<td>2024/04/23 (16:47:40)</td>
+		</tr>
+		<tr>
+			<td>i_mtime</td>
+			<td>2024/04/23 (16:47:40)</td>
+		</tr>
+		<tr>
+			<td>i_block 0</td>
+			<td port="3350333">3350333</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_block</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>i_type</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_perm</td>
+			<td>664</td>
+		</tr>
+	</table>>];
+
+	n3350333[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 3350333</td>
+		</tr>
+		<tr>
+			<td>.</td>
+			<td port="146681">146681</td>
+		</tr>
+		<tr>
+			<td>..</td>
+			<td port="146221">146221</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="-1">-1</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="-1">-1</td>
+		</tr>
+	</table>>];
+
+n146681:3350333->n3350333;
+
+	n160941[label=<<table>
+		<tr>
+			<td bgcolor="#376ef3" colspan="2">Inodo  160941</td>
+		</tr>
+		<tr>
+			<td>i_uid</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_gid</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_s</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_atime</td>
+			<td>1969/12/31 (18:00:00)</td>
+		</tr>
+		<tr>
+			<td>i_ctime</td>
+			<td>1969/12/31 (18:00:00)</td>
+		</tr>
+		<tr>
+			<td>i_mtime</td>
+			<td>1969/12/31 (18:00:00)</td>
+		</tr>
+		<tr>
+			<td>i_block 0</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_block 1</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_block 2</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_block 3</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_block 4</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_block 5</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_block 6</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_block 7</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_block 8</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_block 9</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_block 10</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_block 11</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_block 12</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_block 13</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_block 14</td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td>i_type</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>i_perm</td>
+			<td>0</td>
+		</tr>
+	</table>>];
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="1112539462">1112539462</td>
+		</tr>
+		<tr>
+			<td>�</td>
+			<td port="49">49</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="825569601">825569601</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="846492257">846492257</td>
+		</tr>
+	</table>>];
+n0:1112539462->n1112539462;
+n0:49->n49;
+n0:825569601->n825569601;
+n0:846492257->n846492257;
+
+n160941:0->n0;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="1112539462">1112539462</td>
+		</tr>
+		<tr>
+			<td>�</td>
+			<td port="49">49</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="825569601">825569601</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="846492257">846492257</td>
+		</tr>
+	</table>>];
+n0:1112539462->n1112539462;
+n0:49->n49;
+n0:825569601->n825569601;
+n0:846492257->n846492257;
+
+n160941:0->n0;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="1112539462">1112539462</td>
+		</tr>
+		<tr>
+			<td>�</td>
+			<td port="49">49</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="825569601">825569601</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="846492257">846492257</td>
+		</tr>
+	</table>>];
+n0:1112539462->n1112539462;
+n0:49->n49;
+n0:825569601->n825569601;
+n0:846492257->n846492257;
+
+n160941:0->n0;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="1112539462">1112539462</td>
+		</tr>
+		<tr>
+			<td>�</td>
+			<td port="49">49</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="825569601">825569601</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="846492257">846492257</td>
+		</tr>
+	</table>>];
+n0:1112539462->n1112539462;
+n0:49->n49;
+n0:825569601->n825569601;
+n0:846492257->n846492257;
+
+n160941:0->n0;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="1112539462">1112539462</td>
+		</tr>
+		<tr>
+			<td>�</td>
+			<td port="49">49</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="825569601">825569601</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="846492257">846492257</td>
+		</tr>
+	</table>>];
+n0:1112539462->n1112539462;
+n0:49->n49;
+n0:825569601->n825569601;
+n0:846492257->n846492257;
+
+n160941:0->n0;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="1112539462">1112539462</td>
+		</tr>
+		<tr>
+			<td>�</td>
+			<td port="49">49</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="825569601">825569601</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="846492257">846492257</td>
+		</tr>
+	</table>>];
+n0:1112539462->n1112539462;
+n0:49->n49;
+n0:825569601->n825569601;
+n0:846492257->n846492257;
+
+n160941:0->n0;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="1112539462">1112539462</td>
+		</tr>
+		<tr>
+			<td>�</td>
+			<td port="49">49</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="825569601">825569601</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="846492257">846492257</td>
+		</tr>
+	</table>>];
+n0:1112539462->n1112539462;
+n0:49->n49;
+n0:825569601->n825569601;
+n0:846492257->n846492257;
+
+n160941:0->n0;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="1112539462">1112539462</td>
+		</tr>
+		<tr>
+			<td>�</td>
+			<td port="49">49</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="825569601">825569601</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="846492257">846492257</td>
+		</tr>
+	</table>>];
+n0:1112539462->n1112539462;
+n0:49->n49;
+n0:825569601->n825569601;
+n0:846492257->n846492257;
+
+n160941:0->n0;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="1112539462">1112539462</td>
+		</tr>
+		<tr>
+			<td>�</td>
+			<td port="49">49</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="825569601">825569601</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="846492257">846492257</td>
+		</tr>
+	</table>>];
+n0:1112539462->n1112539462;
+n0:49->n49;
+n0:825569601->n825569601;
+n0:846492257->n846492257;
+
+n160941:0->n0;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="1112539462">1112539462</td>
+		</tr>
+		<tr>
+			<td>�</td>
+			<td port="49">49</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="825569601">825569601</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="846492257">846492257</td>
+		</tr>
+	</table>>];
+n0:1112539462->n1112539462;
+n0:49->n49;
+n0:825569601->n825569601;
+n0:846492257->n846492257;
+
+n160941:0->n0;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="1112539462">1112539462</td>
+		</tr>
+		<tr>
+			<td>�</td>
+			<td port="49">49</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="825569601">825569601</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="846492257">846492257</td>
+		</tr>
+	</table>>];
+n0:1112539462->n1112539462;
+n0:49->n49;
+n0:825569601->n825569601;
+n0:846492257->n846492257;
+
+n160941:0->n0;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="1112539462">1112539462</td>
+		</tr>
+		<tr>
+			<td>�</td>
+			<td port="49">49</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="825569601">825569601</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="846492257">846492257</td>
+		</tr>
+	</table>>];
+n0:1112539462->n1112539462;
+n0:49->n49;
+n0:825569601->n825569601;
+n0:846492257->n846492257;
+
+n160941:0->n0;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Apuntadores</td>
+		</tr>
+		<tr>
+			<td>b_pointer 0</td>
+			<td>52428800</td>
+		</tr>
+		<tr>
+			<td>b_pointer 1</td>
+			<td>1713911303</td>
+		</tr>
+		<tr>
+			<td>b_pointer 2</td>
+			<td>154958</td>
+		</tr>
+		<tr>
+			<td>b_pointer 3</td>
+			<td>1112539462</td>
+		</tr>
+		<tr>
+			<td>b_pointer 4</td>
+			<td>153</td>
+		</tr>
+		<tr>
+			<td>b_pointer 5</td>
+			<td>10485760</td>
+		</tr>
+		<tr>
+			<td>b_pointer 6</td>
+			<td>1953653072</td>
+		</tr>
+		<tr>
+			<td>b_pointer 7</td>
+			<td>49</td>
+		</tr>
+		<tr>
+			<td>b_pointer 8</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 9</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 10</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>b_pointer 11</td>
+			<td>825569601</td>
+		</tr>
+		<tr>
+			<td>b_pointer 12</td>
+			<td>-1723707392</td>
+		</tr>
+		<tr>
+			<td>b_pointer 13</td>
+			<td>40960</td>
+		</tr>
+		<tr>
+			<td>b_pointer 14</td>
+			<td>1342218240</td>
+		</tr>
+		<tr>
+			<td>b_pointer 15</td>
+			<td>846492257</td>
+		</tr>
+	</table>>];
+
+n160941:0->n0;
+
+
+n0:52428800->n52428800;
+
+
+n0:1713911303->n1713911303;
+
+	n154958[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 154958</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="0">0</td>
+		</tr>
+	</table>>];
+n154958:0->n0;
+n154958:0->n0;
+n154958:0->n0;
+n154958:0->n0;
+
+n0:154958->n154958;
+
+
+n0:1112539462->n1112539462;
+
+	n153[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 153</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="109213">109213</td>
+		</tr>
+		<tr>
+			<td>.�</td>
+			<td port="1">1</td>
+		</tr>
+		<tr>
+			<td>S�</td>
+			<td port="11">11</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="145853">145853</td>
+		</tr>
+	</table>>];
+n153:109213->n109213;
+n153:1->n1;
+n153:11->n11;
+n153:145853->n145853;
+
+n0:153->n153;
+
+	n10485760[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 10485760</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="0">0</td>
+		</tr>
+	</table>>];
+n10485760:0->n0;
+n10485760:0->n0;
+n10485760:0->n0;
+n10485760:0->n0;
+
+n0:10485760->n10485760;
+
+
+n0:1953653072->n1953653072;
+
+	n49[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 49</td>
+		</tr>
+		<tr>
+			<td>PB�</td>
+			<td port="3306610">3306610</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="843120640">843120640</td>
+		</tr>
+		<tr>
+			<td>51�PB�</td>
+			<td port="1918980096">1918980096</td>
+		</tr>
+		<tr>
+			<td>t3</td>
+			<td port="768">768</td>
+		</tr>
+	</table>>];
+n49:3306610->n3306610;
+n49:843120640->n843120640;
+n49:1918980096->n1918980096;
+n49:768->n768;
+
+n0:49->n49;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="1112539462">1112539462</td>
+		</tr>
+		<tr>
+			<td>�</td>
+			<td port="49">49</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="825569601">825569601</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="846492257">846492257</td>
+		</tr>
+	</table>>];
+n0:1112539462->n1112539462;
+n0:49->n49;
+n0:825569601->n825569601;
+n0:846492257->n846492257;
+
+n0:0->n0;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="1112539462">1112539462</td>
+		</tr>
+		<tr>
+			<td>�</td>
+			<td port="49">49</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="825569601">825569601</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="846492257">846492257</td>
+		</tr>
+	</table>>];
+n0:1112539462->n1112539462;
+n0:49->n49;
+n0:825569601->n825569601;
+n0:846492257->n846492257;
+
+n0:0->n0;
+
+	n1[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 1</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="-1723707391">-1723707391</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="0">0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td port="3224881">3224881</td>
+		</tr>
+		<tr>
+			<td>PB�</td>
+			<td port="3306610">3306610</td>
+		</tr>
+	</table>>];
+n1:-1723707391->n-1723707391;
+n1:0->n0;
+n1:3224881->n3224881;
+n1:3306610->n3306610;
+
+n0:1->n1;
+
+
+n0:825569601->n825569601;
+
+
+n0:-1723707392->n-1723707392;
+
+	n40960[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#f34037">Bloque Carpeta 40960</td>
+		</tr>
+		<tr>
+			<td>000000000000</td>
+			<td port="808464432">808464432</td>
+		</tr>
+		<tr>
+			<td>000000000000</td>
+			<td port="808464432">808464432</td>
+		</tr>
+		<tr>
+			<td>000000000000</td>
+			<td port="808464432">808464432</td>
+		</tr>
+		<tr>
+			<td>000000000000</td>
+			<td port="808464432">808464432</td>
+		</tr>
+	</table>>];
+n40960:808464432->n808464432;
+n40960:808464432->n808464432;
+n40960:808464432->n808464432;
+n40960:808464432->n808464432;
+
+n0:40960->n40960;
+
+
+n0:1342218240->n1342218240;
+
+
+n0:846492257->n846492257;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Apuntadores</td>
+		</tr>
+		<tr>
+			<td>b_pointer 0</td>
+			<td>52428800</td>
+		</tr>
+		<tr>
+			<td>b_pointer 1</td>
+			<td>1713911303</td>
+		</tr>
+		<tr>
+			<td>b_pointer 2</td>
+			<td>154958</td>
+		</tr>
+		<tr>
+			<td>b_pointer 3</td>
+			<td>1112539462</td>
+		</tr>
+		<tr>
+			<td>b_pointer 4</td>
+			<td>153</td>
+		</tr>
+		<tr>
+			<td>b_pointer 5</td>
+			<td>10485760</td>
+		</tr>
+		<tr>
+			<td>b_pointer 6</td>
+			<td>1953653072</td>
+		</tr>
+		<tr>
+			<td>b_pointer 7</td>
+			<td>49</td>
+		</tr>
+		<tr>
+			<td>b_pointer 8</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 9</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 10</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>b_pointer 11</td>
+			<td>825569601</td>
+		</tr>
+		<tr>
+			<td>b_pointer 12</td>
+			<td>-1723707392</td>
+		</tr>
+		<tr>
+			<td>b_pointer 13</td>
+			<td>40960</td>
+		</tr>
+		<tr>
+			<td>b_pointer 14</td>
+			<td>1342218240</td>
+		</tr>
+		<tr>
+			<td>b_pointer 15</td>
+			<td>846492257</td>
+		</tr>
+	</table>>];
+
+n160941:0->n0;
+
+
+n0:52428800->n52428800;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n52428800:808464432->n808464432;
+
+
+n0:1713911303->n1713911303;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+
+n1713911303:808464432->n808464432;
+
+	n154958[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Apuntadores</td>
+		</tr>
+		<tr>
+			<td>b_pointer 0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 1</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 2</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 3</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 4</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 5</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 6</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 7</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 8</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 9</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 10</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 11</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 12</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 13</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 14</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 15</td>
+			<td>0</td>
+		</tr>
+	</table>>];
+
+n0:154958->n154958;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n154958:808464432->n808464432;
+
+
+n0:1112539462->n1112539462;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+
+n1112539462:808464432->n808464432;
+
+	n153[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Apuntadores</td>
+		</tr>
+		<tr>
+			<td>b_pointer 0</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>b_pointer 1</td>
+			<td>36408</td>
+		</tr>
+		<tr>
+			<td>b_pointer 2</td>
+			<td>109224</td>
+		</tr>
+		<tr>
+			<td>b_pointer 3</td>
+			<td>109213</td>
+		</tr>
+		<tr>
+			<td>b_pointer 4</td>
+			<td>36398</td>
+		</tr>
+		<tr>
+			<td>b_pointer 5</td>
+			<td>1713912108</td>
+		</tr>
+		<tr>
+			<td>b_pointer 6</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 7</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>b_pointer 8</td>
+			<td>61267</td>
+		</tr>
+		<tr>
+			<td>b_pointer 9</td>
+			<td>92</td>
+		</tr>
+		<tr>
+			<td>b_pointer 10</td>
+			<td>64</td>
+		</tr>
+		<tr>
+			<td>b_pointer 11</td>
+			<td>11</td>
+		</tr>
+		<tr>
+			<td>b_pointer 12</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>b_pointer 13</td>
+			<td>221</td>
+		</tr>
+		<tr>
+			<td>b_pointer 14</td>
+			<td>36629</td>
+		</tr>
+		<tr>
+			<td>b_pointer 15</td>
+			<td>145853</td>
+		</tr>
+	</table>>];
+
+n0:153->n153;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+
+n153:808464432->n808464432;
+
+	n10485760[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Apuntadores</td>
+		</tr>
+		<tr>
+			<td>b_pointer 0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 1</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 2</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 3</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 4</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 5</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 6</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 7</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 8</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 9</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 10</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 11</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 12</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 13</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 14</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 15</td>
+			<td>0</td>
+		</tr>
+	</table>>];
+
+n0:10485760->n10485760;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n10485760:808464432->n808464432;
+
+
+n0:1953653072->n1953653072;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+
+n1953653072:808464432->n808464432;
+
+	n49[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Apuntadores</td>
+		</tr>
+		<tr>
+			<td>b_pointer 0</td>
+			<td>10043984</td>
+		</tr>
+		<tr>
+			<td>b_pointer 1</td>
+			<td>160</td>
+		</tr>
+		<tr>
+			<td>b_pointer 2</td>
+			<td>1632632992</td>
+		</tr>
+		<tr>
+			<td>b_pointer 3</td>
+			<td>3306610</td>
+		</tr>
+		<tr>
+			<td>b_pointer 4</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 5</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 6</td>
+			<td>131072</td>
+		</tr>
+		<tr>
+			<td>b_pointer 7</td>
+			<td>843120640</td>
+		</tr>
+		<tr>
+			<td>b_pointer 8</td>
+			<td>1358901557</td>
+		</tr>
+		<tr>
+			<td>b_pointer 9</td>
+			<td>1073781058</td>
+		</tr>
+		<tr>
+			<td>b_pointer 10</td>
+			<td>-1610612735</td>
+		</tr>
+		<tr>
+			<td>b_pointer 11</td>
+			<td>1918980096</td>
+		</tr>
+		<tr>
+			<td>b_pointer 12</td>
+			<td>13172</td>
+		</tr>
+		<tr>
+			<td>b_pointer 13</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 14</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 15</td>
+			<td>768</td>
+		</tr>
+	</table>>];
+
+n0:49->n49;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+
+n49:808464432->n808464432;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Apuntadores</td>
+		</tr>
+		<tr>
+			<td>b_pointer 0</td>
+			<td>52428800</td>
+		</tr>
+		<tr>
+			<td>b_pointer 1</td>
+			<td>1713911303</td>
+		</tr>
+		<tr>
+			<td>b_pointer 2</td>
+			<td>154958</td>
+		</tr>
+		<tr>
+			<td>b_pointer 3</td>
+			<td>1112539462</td>
+		</tr>
+		<tr>
+			<td>b_pointer 4</td>
+			<td>153</td>
+		</tr>
+		<tr>
+			<td>b_pointer 5</td>
+			<td>10485760</td>
+		</tr>
+		<tr>
+			<td>b_pointer 6</td>
+			<td>1953653072</td>
+		</tr>
+		<tr>
+			<td>b_pointer 7</td>
+			<td>49</td>
+		</tr>
+		<tr>
+			<td>b_pointer 8</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 9</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 10</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>b_pointer 11</td>
+			<td>825569601</td>
+		</tr>
+		<tr>
+			<td>b_pointer 12</td>
+			<td>-1723707392</td>
+		</tr>
+		<tr>
+			<td>b_pointer 13</td>
+			<td>40960</td>
+		</tr>
+		<tr>
+			<td>b_pointer 14</td>
+			<td>1342218240</td>
+		</tr>
+		<tr>
+			<td>b_pointer 15</td>
+			<td>846492257</td>
+		</tr>
+	</table>>];
+
+n0:0->n0;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Apuntadores</td>
+		</tr>
+		<tr>
+			<td>b_pointer 0</td>
+			<td>52428800</td>
+		</tr>
+		<tr>
+			<td>b_pointer 1</td>
+			<td>1713911303</td>
+		</tr>
+		<tr>
+			<td>b_pointer 2</td>
+			<td>154958</td>
+		</tr>
+		<tr>
+			<td>b_pointer 3</td>
+			<td>1112539462</td>
+		</tr>
+		<tr>
+			<td>b_pointer 4</td>
+			<td>153</td>
+		</tr>
+		<tr>
+			<td>b_pointer 5</td>
+			<td>10485760</td>
+		</tr>
+		<tr>
+			<td>b_pointer 6</td>
+			<td>1953653072</td>
+		</tr>
+		<tr>
+			<td>b_pointer 7</td>
+			<td>49</td>
+		</tr>
+		<tr>
+			<td>b_pointer 8</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 9</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 10</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>b_pointer 11</td>
+			<td>825569601</td>
+		</tr>
+		<tr>
+			<td>b_pointer 12</td>
+			<td>-1723707392</td>
+		</tr>
+		<tr>
+			<td>b_pointer 13</td>
+			<td>40960</td>
+		</tr>
+		<tr>
+			<td>b_pointer 14</td>
+			<td>1342218240</td>
+		</tr>
+		<tr>
+			<td>b_pointer 15</td>
+			<td>846492257</td>
+		</tr>
+	</table>>];
+
+n0:0->n0;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+
+n0:808464432->n808464432;
+
+	n1[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Apuntadores</td>
+		</tr>
+		<tr>
+			<td>b_pointer 0</td>
+			<td>117645312</td>
+		</tr>
+		<tr>
+			<td>b_pointer 1</td>
+			<td>1315317814</td>
+		</tr>
+		<tr>
+			<td>b_pointer 2</td>
+			<td>1174405725</td>
+		</tr>
+		<tr>
+			<td>b_pointer 3</td>
+			<td>-1723707391</td>
+		</tr>
+		<tr>
+			<td>b_pointer 4</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 5</td>
+			<td>1342218240</td>
+		</tr>
+		<tr>
+			<td>b_pointer 6</td>
+			<td>829715041</td>
+		</tr>
+		<tr>
+			<td>b_pointer 7</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 8</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 9</td>
+			<td>16777216</td>
+		</tr>
+		<tr>
+			<td>b_pointer 10</td>
+			<td>1090519040</td>
+		</tr>
+		<tr>
+			<td>b_pointer 11</td>
+			<td>3224881</td>
+		</tr>
+		<tr>
+			<td>b_pointer 12</td>
+			<td>10043984</td>
+		</tr>
+		<tr>
+			<td>b_pointer 13</td>
+			<td>160</td>
+		</tr>
+		<tr>
+			<td>b_pointer 14</td>
+			<td>1632632992</td>
+		</tr>
+		<tr>
+			<td>b_pointer 15</td>
+			<td>3306610</td>
+		</tr>
+	</table>>];
+
+n0:1->n1;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n1:808464432->n808464432;
+
+
+n0:825569601->n825569601;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n825569601:808464432->n808464432;
+
+
+n0:-1723707392->n-1723707392;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+
+n-1723707392:808464432->n808464432;
+
+	n40960[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Apuntadores</td>
+		</tr>
+		<tr>
+			<td>b_pointer 0</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 1</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 2</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 3</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 4</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 5</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 6</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 7</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 8</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 9</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 10</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 11</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 12</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 13</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 14</td>
+			<td>808464432</td>
+		</tr>
+		<tr>
+			<td>b_pointer 15</td>
+			<td>808464432</td>
+		</tr>
+	</table>>];
+
+n0:40960->n40960;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n40960:808464432->n808464432;
+
+
+n0:1342218240->n1342218240;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n1342218240:808464432->n808464432;
+
+
+n0:846492257->n846492257;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+
+n846492257:808464432->n808464432;
+
+	n0[label=<<table>
+		<tr>
+			<td colspan="2" bgcolor="#c3f8b6">Bloque Apuntadores</td>
+		</tr>
+		<tr>
+			<td>b_pointer 0</td>
+			<td>52428800</td>
+		</tr>
+		<tr>
+			<td>b_pointer 1</td>
+			<td>1713911303</td>
+		</tr>
+		<tr>
+			<td>b_pointer 2</td>
+			<td>154958</td>
+		</tr>
+		<tr>
+			<td>b_pointer 3</td>
+			<td>1112539462</td>
+		</tr>
+		<tr>
+			<td>b_pointer 4</td>
+			<td>153</td>
+		</tr>
+		<tr>
+			<td>b_pointer 5</td>
+			<td>10485760</td>
+		</tr>
+		<tr>
+			<td>b_pointer 6</td>
+			<td>1953653072</td>
+		</tr>
+		<tr>
+			<td>b_pointer 7</td>
+			<td>49</td>
+		</tr>
+		<tr>
+			<td>b_pointer 8</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 9</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>b_pointer 10</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>b_pointer 11</td>
+			<td>825569601</td>
+		</tr>
+		<tr>
+			<td>b_pointer 12</td>
+			<td>-1723707392</td>
+		</tr>
+		<tr>
+			<td>b_pointer 13</td>
+			<td>40960</td>
+		</tr>
+		<tr>
+			<td>b_pointer 14</td>
+			<td>1342218240</td>
+		</tr>
+		<tr>
+			<td>b_pointer 15</td>
+			<td>846492257</td>
+		</tr>
+	</table>>];
+
+n160941:0->n0;
+
+}

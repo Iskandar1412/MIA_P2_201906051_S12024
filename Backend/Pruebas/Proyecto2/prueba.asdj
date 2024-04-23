@@ -7,11 +7,11 @@
 #execute -path=Pruebas/Proyecto2/prueba.asdj
 
 #CREACION DE DISCOS---------------------------------------------------
-#Mkdisk -size=50 -unit=M -fit=FF                   # 50M A
-#Mkdisk -unit=k -size=51200 -fit=BF                # 50M B
-#mkDisk -size=14                                   # 13M C
-#mkdisk -size=51200 -unit=K                        # 50M D
-#mkDisk -size=20 -unit=M -fit=WF                   # 20M E
+Mkdisk -size=50 -unit=M -fit=FF                   # 50M A
+Mkdisk -unit=k -size=51200 -fit=BF                # 50M B
+mkDisk -size=14                                   # 13M C
+mkdisk -size=51200 -unit=K                        # 50M D
+mkDisk -size=20 -unit=M -fit=WF                   # 20M E
 
 #CREACION DE PARTICIONES---------------------------------------------------
 #DISCO 1
@@ -51,33 +51,33 @@ mkfs -type=full -id=A151 -fs=2fs
 login -user=root -pass=123 -id=A151
 
 #CREACION DE CARPETAS------------------------------------------------
-mkdir -r -path="/calificacion/U 2024/9no Semestre/" #RECURSIVO
+mkdir -r -path="/calificacion/U 2024/9no Semestre" #RECURSIVO
 
-mkdir -path="/calificacion/U 2024/9no Semestre/Geren. 2/"
-mkfile -path="/calificacion/U 2024/9no Semestre/Geren. 2/lab.txt" -size=5
-mkfile -path="/calificacion/U 2024/9no Semestre/Geren. 2/magistral.txt" -size=5
+mkdir -path="/calificacion/U 2024/9no Semestre/Gerenciales2"
+mkfile -path="/calificacion/U 2024/9no Semestre/Gerenciales2/lab.txt" -size=5
+mkfile -path="/calificacion/U 2024/9no Semestre/Gerenciales2/magistral.txt" -size=5
 
-mkdir -path="/calificacion/U 2024/9no Semestre/IA/"
+mkdir -path="/calificacion/U 2024/9no Semestre/IA"
 mkfile -path="/calificacion/U 2024/9no Semestre/IA/lab1.txt" -size=10
 mkfile -path="/calificacion/U 2024/9no Semestre/IA/magistral1.txt" -size=10
 
-mkdir -path="/calificacion/U 2024/9no Semestre/Modela 1/"
+mkdir -path="/calificacion/U 2024/9no Semestre/Modela 1"
 mkfile -path="/calificacion/U 2024/9no Semestre/Modela 1/lab2.txt" -size=20
 mkfile -path="/calificacion/U 2024/9no Semestre/Modela 1/magistral2.txt" -size=20
 
-mkdir -path="/calificacion/U 2024/9no Semestre/Semi 2/"
+mkdir -path="/calificacion/U 2024/9no Semestre/Semi 2"
 mkfile -path="/calificacion/U 2024/9no Semestre/Semi 2/lab3.txt" -size=30
 mkfile -path="/calificacion/U 2024/9no Semestre/Semi 2/magistral3.txt" -size=30
 
-mkdir -path="/calificacion/U 2024/9no Semestre/Semi Inv/"
+mkdir -path="/calificacion/U 2024/9no Semestre/Semi Inv"
 mkfile -path="/calificacion/U 2024/9no Semestre/Semi Inv/lab4.txt" -size=40
 mkfile -path="/calificacion/U 2024/9no Semestre/Semi Inv/magistral4.txt" -size=40
 
-mkdir -path="/calificacion/U 2024/Files/"
+mkdir -path="/calificacion/U 2024/Files"
 mkfile -path="/calificacion/U 2024/Files/boleta.txt"
 mkfile -path="/calificacion/U 2024/Files/comprobacion.txt"
 
-mkdir -path="/calificacion/MIA/"
+mkdir -path="/calificacion/MIA"
 mkfile -path=/calificacion/MIA/Explotar.txt -size=768
 mkfile -r -path=/calificacion/MIA/Rescursivo/r1/r2/r3/entrada.txt #RECURSIVO
 
@@ -100,7 +100,7 @@ logout
 #                  9no Semestre
 #                              |
 #                              |
-#                              Geren. 2
+#                              Gerenciales2
 #                                          |
 #                                          |
 #                                          lab.txt
