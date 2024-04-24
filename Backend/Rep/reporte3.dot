@@ -17,7 +17,7 @@ digraph G{
 		<tr><td colspan="2" bgcolor="#6308d8"><font color="white">Particion</font></td></tr>
 		<tr>
 			<td>part_status</td>
-			<td>0</td>
+			<td>1</td>
 		</tr>
 		<tr>
 			<td brcolor="#b48be8">part_type</td>

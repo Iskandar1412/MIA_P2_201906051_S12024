@@ -117,7 +117,7 @@ func MKFILE_EXECUTE(path string, r bool, _size int32, cont string) {
 	var existP = true
 	var inodo structures.TablaInodo
 	if len(rutaS) > 1 {
-		for i := 0; i < len(rutaS)-1; i++ {
+		for i := 0; i < (len(rutaS) - 1); i++ {
 			if existP {
 				aux := posInodoI
 				posInodoI = utils.ExistPathSystem(rutaS, int32(i), posInodoI, nodo.Path)
@@ -141,6 +141,9 @@ func MKFILE_EXECUTE(path string, r bool, _size int32, cont string) {
 					}
 					if err := binary.Write(file, binary.LittleEndian, &utils.Sb_System); err != nil {
 						color.Red("[MKFILE]: Error en la escritura del archivo")
+						return
+					}
+					if posInodoI == -1 {
 						return
 					}
 				} else {
@@ -178,6 +181,9 @@ func MKFILE_EXECUTE(path string, r bool, _size int32, cont string) {
 			if conta == 10 {
 				conta = 0
 			}
+		}
+		if texto == "" {
+			texto += fmt.Sprint(0)
 		}
 	}
 
@@ -236,7 +242,7 @@ func MKFILE_EXECUTE(path string, r bool, _size int32, cont string) {
 	}
 
 	if (inicioBM == -1) || (cantContiguos != int32(len(contenido)) && (_size != 0)) {
-		color.Red("[MKFILE]: No hay suficientes bloques contiguos para actualizar archivo")
+		color.Red("[MKFILE]: No hay suficientes bloques contiguos para actualizar archivo: " + rutaS[len(rutaS)-1])
 		return
 	}
 

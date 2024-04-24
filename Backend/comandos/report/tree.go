@@ -54,7 +54,7 @@ func Report_TREE(name string, path string, ruta string, id_disco string) {
 	start := sb.S_bm_inode_start
 	end := start + sb.S_inodes_count
 	inodo := structures.TablaInodo{}
-	apuntador1, apuntador2, apuntador3 := structures.BloqueApuntador{}, structures.BloqueApuntador{}, structures.BloqueApuntador{}
+	// apuntador1, apuntador2, apuntador3 := structures.BloqueApuntador{}, structures.BloqueApuntador{}, structures.BloqueApuntador{}
 	var bit byte
 	cont := int32(0)
 
@@ -93,112 +93,6 @@ func Report_TREE(name string, path string, ruta string, id_disco string) {
 							fmt.Fprintln(dot, utils.TreeBlock(inodo.I_block[i], 1, disco_buscado.Path))
 						}
 						fmt.Fprintln(dot, utils.Conexiones(posInodo, inodo.I_block[i]))
-					} else if i == 12 {
-						if _, err := file.Seek(int64(inodo.I_block[i]), 0); err != nil {
-							color.Red("[REP]: Error en mover puntero")
-							return
-						}
-						if err := binary.Read(file, binary.LittleEndian, &apuntador1); err != nil {
-							color.Red("[REP]: Error en la lectura del Apuntador 1")
-							return
-						}
-						fmt.Fprintln(dot, utils.TreeBlock(inodo.I_block[i], 2, disco_buscado.Path))
-						fmt.Fprintln(dot, utils.Conexiones(posInodo, inodo.I_block[i]))
-						for j := 0; j < 16; j++ {
-							if apuntador1.B_pointers[j] != -1 {
-								if inodo.I_type == 0 {
-									fmt.Fprintln(dot, utils.TreeBlock(apuntador1.B_pointers[j], 0, disco_buscado.Path))
-								} else if inodo.I_type == 1 {
-									fmt.Fprintln(dot, utils.TreeBlock(apuntador1.B_pointers[j], 1, disco_buscado.Path))
-								}
-								fmt.Fprintln(dot, utils.Conexiones(inodo.I_block[i], apuntador1.B_pointers[j]))
-							}
-						}
-					} else if i == 13 {
-						if _, err := file.Seek(int64(inodo.I_block[i]), 0); err != nil {
-							color.Red("[REP]: Error en mover puntero")
-							return
-						}
-						if err := binary.Read(file, binary.LittleEndian, &apuntador1); err != nil {
-							color.Red("[REP]: Error en la lectura del Apuntador 1")
-							return
-						}
-						fmt.Fprintln(dot, utils.TreeBlock(inodo.I_block[i], 2, disco_buscado.Path))
-						fmt.Fprintln(dot, utils.Conexiones(posInodo, inodo.I_block[i]))
-						for j := 0; j < 16; j++ {
-							if apuntador1.B_pointers[j] != -1 {
-								if _, err := file.Seek(int64(apuntador1.B_pointers[i]), 0); err != nil {
-									color.Red("[REP]: Error en mover puntero")
-									return
-								}
-								if err := binary.Read(file, binary.LittleEndian, &apuntador2); err != nil {
-									color.Red("[REP]: Error en la lectura del Apuntador 2")
-									return
-								}
-								fmt.Fprintln(dot, utils.TreeBlock(apuntador1.B_pointers[j], 2, disco_buscado.Path))
-								fmt.Fprintln(dot, utils.Conexiones(inodo.I_block[i], apuntador1.B_pointers[j]))
-								for k := 0; k < 16; k++ {
-									if apuntador2.B_pointers[k] != -1 {
-										if inodo.I_type == 0 {
-											fmt.Fprintln(dot, utils.TreeBlock(apuntador2.B_pointers[k], 0, disco_buscado.Path))
-										} else if inodo.I_type == 1 {
-											fmt.Fprintln(dot, utils.TreeBlock(apuntador2.B_pointers[k], 1, disco_buscado.Path))
-										}
-										fmt.Fprintln(dot, utils.Conexiones(apuntador1.B_pointers[j], apuntador2.B_pointers[k]))
-									}
-								}
-							}
-						}
-					} else if i == 14 {
-						if _, err := file.Seek(int64(inodo.I_block[i]), 0); err != nil {
-							color.Red("[REP]: Error en mover puntero")
-							return
-						}
-						if err := binary.Read(file, binary.LittleEndian, &apuntador1); err != nil {
-							color.Red("[REP]: Error en la lectura del Apuntador 1")
-							return
-						}
-						fmt.Fprintln(dot, utils.TreeBlock(inodo.I_block[i], 2, disco_buscado.Path))
-						fmt.Fprintln(dot, utils.Conexiones(posInodo, inodo.I_block[i]))
-						for j := 0; j < 16; j++ {
-							if apuntador1.B_pointers[j] != -1 {
-								if _, err := file.Seek(int64(apuntador1.B_pointers[i]), 0); err != nil {
-									color.Red("[REP]: Error en mover puntero")
-									return
-								}
-								if err := binary.Read(file, binary.LittleEndian, &apuntador2); err != nil {
-									color.Red("[REP]: Error en la lectura del Apuntador 2")
-									return
-								}
-								fmt.Fprintln(dot, utils.TreeBlock(apuntador1.B_pointers[j], 2, disco_buscado.Path))
-								fmt.Fprintln(dot, utils.Conexiones(inodo.I_block[i], apuntador1.B_pointers[j]))
-								for k := 0; k < 16; k++ {
-									if apuntador2.B_pointers[k] != -1 {
-										if _, err := file.Seek(int64(apuntador2.B_pointers[k]), 0); err != nil {
-											color.Red("[REP]: Error en mover puntero")
-											return
-										}
-										if err := binary.Read(file, binary.LittleEndian, &apuntador3); err != nil {
-											color.Red("[REP]: Error en la lectura del Apuntador 3")
-											return
-										}
-										fmt.Fprintln(dot, utils.TreeBlock(apuntador2.B_pointers[k], 2, disco_buscado.Path))
-										fmt.Fprintln(dot, utils.Conexiones(apuntador1.B_pointers[j], apuntador2.B_pointers[k]))
-										for l := 0; l < 16; l++ {
-											if apuntador3.B_pointers[l] != -1 {
-												if inodo.I_type == 0 {
-													fmt.Fprintln(dot, utils.TreeBlock(apuntador3.B_pointers[l], 0, disco_buscado.Path))
-												} else if inodo.I_type == 1 {
-													fmt.Fprintln(dot, utils.TreeBlock(apuntador3.B_pointers[l], 1, disco_buscado.Path))
-												}
-												fmt.Fprintln(dot, utils.Conexiones(apuntador2.B_pointers[k], apuntador3.B_pointers[l]))
-											}
-										}
-
-									}
-								}
-							}
-						}
 					}
 				}
 			}

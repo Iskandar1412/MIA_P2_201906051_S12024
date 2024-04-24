@@ -20,7 +20,7 @@ func TreeBlock(pos int32, _type int32, path string) string {
 	dot := ``
 	file, err := os.OpenFile(path, os.O_RDWR, 0666)
 	if err != nil {
-		color.Red("[+]: Error al abrir archivo")
+		color.Red("[|+]: Error al abrir archivo")
 		return ""
 	}
 	defer file.Close()
@@ -28,11 +28,11 @@ func TreeBlock(pos int32, _type int32, path string) string {
 	if _type == 0 {
 		carpeta := structures.BloqueCarpeta{}
 		if _, err := file.Seek(int64(pos), 0); err != nil {
-			color.Red("[+]: Error en mover puntero")
+			color.Red("[0+]: Error en mover puntero")
 			return ""
 		}
 		if err := binary.Read(file, binary.LittleEndian, &carpeta); err != nil {
-			color.Red("[+]: Error en la lectura del Bloque de Carpeta")
+			color.Red("[0+]: Error en la lectura del Bloque de Carpeta")
 			return ""
 		}
 
@@ -62,11 +62,11 @@ func TreeBlock(pos int32, _type int32, path string) string {
 		// contenido := ""
 		archivo := structures.BloqueArchivo{}
 		if _, err := file.Seek(int64(pos), 0); err != nil {
-			color.Red("[+]: Error en mover puntero")
+			color.Red("[1+]: Error en mover puntero")
 			return ""
 		}
 		if err := binary.Read(file, binary.LittleEndian, &archivo); err != nil {
-			color.Red("[+]: Error en la lectura del Bloque de Archivo")
+			color.Red("[1+]: Error en la lectura del Bloque de Archivo")
 			return ""
 		}
 
@@ -79,27 +79,6 @@ func TreeBlock(pos int32, _type int32, path string) string {
 		dot += "\t\t" + `<tr>` + "\n"
 		dot += "\t\t\t" + `<td>` + Returnstring(contenido) + `</td>` + "\n"
 		dot += "\t\t" + `</tr>` + "\n"
-		dot += "\t" + `</table>>];` + "\n"
-	} else {
-		apuntador := structures.BloqueApuntador{}
-		if _, err := file.Seek(int64(pos), 0); err != nil {
-			color.Red("[+]: Error en mover puntero")
-			return ""
-		}
-		if err := binary.Read(file, binary.LittleEndian, &apuntador); err != nil {
-			color.Red("[+]: Error en la lectura del Bloque de Apuntadores")
-			return ""
-		}
-		dot += "\tn" + strconv.Itoa(int(pos)) + `[label=<<table>` + "\n"
-		dot += "\t\t" + `<tr>` + "\n"
-		dot += "\t\t\t" + `<td colspan="2" bgcolor="#c3f8b6">Bloque Apuntadores</td>` + "\n"
-		dot += "\t\t" + `</tr>` + "\n"
-		for i := 0; i < 16; i++ {
-			dot += "\t\t" + `<tr>` + "\n"
-			dot += "\t\t\t" + `<td>` + "b_pointer " + fmt.Sprint(i) + `</td>` + "\n"
-			dot += "\t\t\t" + `<td>` + fmt.Sprint(apuntador.B_pointers[i]) + `</td>` + "\n"
-			dot += "\t\t" + `</tr>` + "\n"
-		}
 		dot += "\t" + `</table>>];` + "\n"
 	}
 
