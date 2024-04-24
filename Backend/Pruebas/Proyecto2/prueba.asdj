@@ -7,11 +7,11 @@
 #execute -path=Pruebas/Proyecto2/prueba.asdj
 
 #CREACION DE DISCOS---------------------------------------------------
-#Mkdisk -size=50 -unit=M -fit=FF                   # 50M A
-#Mkdisk -unit=k -size=51200 -fit=BF                # 50M B
-#mkDisk -size=14                                   # 13M C
-#mkdisk -size=51200 -unit=K                        # 50M D
-#mkDisk -size=20 -unit=M -fit=WF                   # 20M E
+Mkdisk -size=50 -unit=M -fit=FF                   # 50M A
+Mkdisk -unit=k -size=51200 -fit=BF                # 50M B
+mkDisk -size=14                                   # 13M C
+mkdisk -size=51200 -unit=K                        # 50M D
+mkDisk -size=20 -unit=M -fit=WF                   # 20M E
 
 #CREACION DE PARTICIONES---------------------------------------------------
 #DISCO 1
